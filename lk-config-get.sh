@@ -34,6 +34,7 @@ getOStype()
 	command -v hostnamectl >/dev/null 2>&1 || { echo "hostnamectl not found."; return 1; }
 	os=`sh -c "hostnamectl" | grep "Operating System:"`
 	DIRNAME=`echo "$os" | sed 's/.*: //g'`
+	DIRNAME="${DIRNAME/\//_}"
 }
 
 dump_bootconfig()
