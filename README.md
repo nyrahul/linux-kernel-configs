@@ -1,1 +1,1 @@
-# linux-kernel-configs
+# Linux Kernel Configs for Popular distros
