@@ -40,13 +40,23 @@ getOStype()
 dump_bootconfig()
 {
 	MD="$DIRNAME/bootconfig.md"
+	if [ -f /proc/config.gz ]; then
+		cmd2use="zcat /proc/config.gz"
+	elif [ -f /boot/config-$(uname -r) ]; then
+		cmd2use="cat /boot/config-$(uname -r)"
+	elif [ -f /boot/config ]; then
+		cmd2use="cat /boot/config"
+	else
+		statusline WARN "no way to get kernel config"
+		return
+	fi
 	cat > "$MD" <<-EOF
 # Boot Config
 \`\`\`
-`cat /boot/config-$(uname -r)`
+`$cmd2use`
 \`\`\`
 EOF
-	statusline AOK "dumped boot config to [$MD]"
+	statusline AOK "dumped boot config to [$MD] ... used cmd:[$cmd2use]"
 }
 
 dump_hostnamectl()
