@@ -52,12 +52,16 @@ dump_bootconfig()
 		cmd2use="cat /boot/config-$(uname -r)"
 	elif [ -f /boot/config ]; then
 		cmd2use="cat /boot/config"
+	elif [ -f "/usr/src/linux-headers-$(uname -r)/.config" ]; then
+		cmd2use="cat /usr/src/linux-headers-$(uname -r)/.config"
 	else
-		statusline WARN "no way to get kernel config"
-		return
+		statusline ERR "no way to get kernel config"
+		exit
 	fi
 	cat > "$MD" <<-EOF
 # Boot Config
+
+Command used: \`$cmd2use\`
 \`\`\`
 `$cmd2use`
 \`\`\`

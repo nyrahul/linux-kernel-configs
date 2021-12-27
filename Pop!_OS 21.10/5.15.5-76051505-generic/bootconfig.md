@@ -1,4 +1,6 @@
 # Boot Config
+
+Command used: `cat /boot/config-5.15.5-76051505-generic`
 ```
 #
 # Automatically generated file; DO NOT EDIT.
