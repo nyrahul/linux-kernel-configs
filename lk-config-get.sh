@@ -35,6 +35,7 @@ getOStype()
 	if [ -f $OSREL ]; then
 		. $OSREL
 		DIRNAME="$PRETTY_NAME"
+		DIRNAME="${DIRNAME/\//_}"
 		return 0
 	fi
 	command -v hostnamectl >/dev/null 2>&1 || { echo "hostnamectl not found."; return 1; }
