@@ -54,6 +54,8 @@ dump_bootconfig()
 		cmd2use="cat /boot/config"
 	elif [ -f "/usr/src/linux-headers-$(uname -r)/.config" ]; then
 		cmd2use="cat /usr/src/linux-headers-$(uname -r)/.config"
+	elif [ -f "/lib/modules/$(uname -r)/config" ]; then
+		cmd2use="cat /lib/modules/$(uname -r)/config"
 	else
 		statusline ERR "no way to get kernel config"
 		exit
