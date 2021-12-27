@@ -11,4 +11,8 @@ Use following command to create a Distro/Kernel specific folder with the corresp
 ```
 curl -s https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/lk-config-get.sh | bash -s
 ```
+if `curl` is not available, use `wget` ...
+```
+wget -q -O- https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/lk-config-get.sh  | bash -s
+```
 Copy the folder to your github fork and raise a PR.
