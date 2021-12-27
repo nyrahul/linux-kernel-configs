@@ -29,8 +29,14 @@ statusline()
 	exit 1
 }
 
+OSREL="/etc/os-release"
 getOStype()
 {
+	if [ -f $OSREL ]; then
+		. $OSREL
+		DIRNAME="$PRETTY_NAME"
+		return 0
+	fi
 	command -v hostnamectl >/dev/null 2>&1 || { echo "hostnamectl not found."; return 1; }
 	os=`sh -c "hostnamectl" | grep "Operating System:"`
 	DIRNAME=`echo "$os" | sed 's/.*: //g'`
@@ -63,7 +69,7 @@ dump_hostnamectl()
 {
 	MD="$DIRNAME/hostnamectl.md"
 	command -v hostnamectl >/dev/null 2>&1
-	[[ $? -ne 0 ]] && echo "`hostnamectl` not found." > "$MD" && statusline WARN "hostnamectl cmd not found" && return 1
+	[[ $? -ne 0 ]] && statusline WARN "hostnamectl cmd not found" && return 1
 	cat > "$MD" <<-EOF
 # hostnamectl
 \`\`\`
@@ -73,6 +79,18 @@ EOF
 	statusline AOK "dumped hostnamectl to [$MD]"
 }
 
+dump_os_release()
+{
+	MD="$DIRNAME/os-release.md"
+	[[ ! -f "$OSREL" ]] && statusline WARN "file $OSREL not found" && return 1
+	cat > "$MD" <<-EOF
+# /etc/os-release
+\`\`\`
+`cat /etc/os-release`
+\`\`\`
+EOF
+	statusline AOK "dumped $OSREL to [$MD]"
+}
 getDirname()
 {
 	DIRNAME=${1:-unknownLINUX}
@@ -86,6 +104,7 @@ main()
 {
 	dump_bootconfig
 	dump_hostnamectl
+	dump_os_release
 }
 
 # Processing starts here
