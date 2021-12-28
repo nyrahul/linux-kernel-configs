@@ -2,6 +2,7 @@
 
 YQ=`dirname $0`/yq
 HDR_MD=`dirname $0`/header.md
+FTR_MD=`dirname $0`/footer.md
 YAML=$1
 TMP_OSREL=temporary_osrel.txt
 TMP_HOSTCTL=temporary_hostnamectl.txt
@@ -132,6 +133,7 @@ main()
 EOF
 	forEveryPlatform addCommonEntry
 #	forEveryPlatform forEveryComposition
+	cat $FTR_MD >> $MD
 }
 
 main
