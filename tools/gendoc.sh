@@ -130,8 +130,8 @@ main()
 	cp $HDR_MD $MD
 	cat >> "$MD" <<-EOF
 # Distro Details
-| Distro | Arch | Kernel | Boot Config | hostnamectl | os-release |
-|:------:|:----:|:------:|:-----------:|:-----------:|:----------:|
+| Distro | Arch | Kernel | Kernel Config | hostnamectl | os-release |
+|:------:|:----:|:------:|:-------------:|:-----------:|:----------:|
 EOF
 	forEveryPlatform addCommonEntry
 #	forEveryPlatform forEveryComposition

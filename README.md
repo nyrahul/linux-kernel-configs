@@ -6,8 +6,8 @@ I frequently needed a way to check a kernel config and other OS configuration fo
 [KubeArmor](https://github.com/kubearmor/kubearmor) leverages LSMs (Linux Security Modules) and eBPF for in-kernel policy controls. We had to refer to kernel configs for making design/dev decisions regarding whether we can depend on a certain kernel primitive. The boot configs part of this repo helped in making an informed choice.
 
 # Distro Details
-| Distro | Arch | Kernel | Boot Config | hostnamectl | os-release |
-|:------:|:----:|:------:|:-----------:|:-----------:|:----------:|
+| Distro | Arch | Kernel | Kernel Config | hostnamectl | os-release |
+|:------:|:----:|:------:|:-------------:|:-----------:|:----------:|
 | Amazon Linux 2022 | x86_64 | 5.10.75 | [config](<./Amazon Linux 2022/5.10.75-82.359.amzn2022.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2022/5.10.75-82.359.amzn2022.x86_64/hostnamectl.md>) | [file](<./Amazon Linux 2022/5.10.75-82.359.amzn2022.x86_64/os-release.md>) |
 | Amazon Linux 2 | x86_64 | 4.14.252 | [config](<./Amazon Linux 2/4.14.252-195.483.amzn2.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2/4.14.252-195.483.amzn2.x86_64/hostnamectl.md>) | NotAvailable |
 | Amazon Linux 2 | x86_64 | 5.10.75 | [config](<./Amazon Linux 2/5.10.75-79.358.amzn2.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2/5.10.75-79.358.amzn2.x86_64/hostnamectl.md>) | NotAvailable |
