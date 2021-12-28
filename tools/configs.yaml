@@ -1,0 +1,7 @@
+compositions:
+  - name: "BPF_LSM"
+    desc: "BPF_LSM support?"
+    configs: "CONFIG_BPF CONFIG_BPF_LSM"
+  - name: "SECCOMP"
+    desc: "SECCOMP support?"
+    configs: "CONFIG_SECCOMP"
