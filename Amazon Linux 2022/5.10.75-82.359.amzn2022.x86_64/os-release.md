@@ -1,0 +1,13 @@
+# /etc/os-release
+```
+NAME="Amazon Linux"
+VERSION="2022"
+ID="amzn"
+ID_LIKE="fedora"
+VERSION_ID="2022"
+PLATFORM_ID="platform:al2022"
+PRETTY_NAME="Amazon Linux 2022"
+ANSI_COLOR="0;33"
+CPE_NAME="cpe:2.3:o:amazon:amazon_linux:2022"
+HOME_URL="https://amazonlinux.com/"
+```
