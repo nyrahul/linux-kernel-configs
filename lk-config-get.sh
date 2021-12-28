@@ -58,8 +58,9 @@ dump_bootconfig()
 		cmd2use="cat /lib/modules/$(uname -r)/config"
 	else
 		cat <<-EOF
+
 Could not find kernel config! Few things you can do:
-1. Some platforms (such as Raspberry PI) keep their keep configs as part of configs.ko. Use `sudo modprobe configs` to load it and then run this command again.
+1. Some platforms (such as Raspberry PI) keep their keep configs as part of configs.ko. Use "sudo modprobe configs" to load it and then run this command again.
 2. If you find any other way to identify kernel config, please let us know.
 EOF
 		statusline ERR "no way to get kernel config"
