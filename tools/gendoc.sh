@@ -111,7 +111,6 @@ forEveryPlatform()
 
 		$1
 	done < <(find . -mindepth 2 -maxdepth 2 -type d | sort)
-	exit
 }
 
 cleanup()

@@ -28,3 +28,18 @@ I frequently needed a way to check a kernel config and other OS configuration fo
 | Ubuntu 18.04.6 LTS | x86_64 | 5.4.0 | [config](<./Ubuntu 18.04.6 LTS/5.4.0-1060-aws/bootconfig.md>) | [hostnamectl](<./Ubuntu 18.04.6 LTS/5.4.0-1060-aws/hostnamectl.md>) | [os-release](<./Ubuntu 18.04.6 LTS/5.4.0-1060-aws/os-release.md>) |
 | Ubuntu 20.04.3 LTS | x86_64 | 5.11.0 | [config](<./Ubuntu 20.04.3 LTS/5.11.0-1022-aws/bootconfig.md>) | [hostnamectl](<./Ubuntu 20.04.3 LTS/5.11.0-1022-aws/hostnamectl.md>) | [os-release](<./Ubuntu 20.04.3 LTS/5.11.0-1022-aws/os-release.md>) |
 | VMware Photon OS/Linux | x86_64 | 5.10.61 | [config](<./VMware Photon OS_Linux/5.10.61-1.ph4/bootconfig.md>) | [hostnamectl](<./VMware Photon OS_Linux/5.10.61-1.ph4/hostnamectl.md>) | [os-release](<./VMware Photon OS_Linux/5.10.61-1.ph4/os-release.md>) |
+
+# Want to add a new OS/Distro and raise a PR?
+
+Use following command to create a Distro/Kernel specific folder with the corresponding markdowns:
+```
+curl -s https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/lk-config-get.sh | bash -s
+```
+if `curl` is not available, use `wget` ...
+```
+wget -q -O- https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/lk-config-get.sh  | bash -s
+```
+
+1. Copy the folder to your github fork
+2. Run `make`
+3. Raise a PR
