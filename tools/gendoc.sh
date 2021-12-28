@@ -86,9 +86,12 @@ addCommonEntry()
 {
 	getDistro
 	getArchKrnVer
-	echo "[$DISTRO_NAME] [$ARCH] [$KRNVER]"
+	hoststr="NotAvailable"
+	osrelstr="NotAvailable"
+	[[ -f "$HOSTNAMECTL" ]] && hoststr="[file](<$HOSTNAMECTL>)"
+	[[ -f "$OSREL" ]] && osrelstr="[file](<$OSREL>)"
 	cat >> "$MD" <<-EOF
-| $DISTRO_NAME | $ARCH | $KRNVER | [config](<$BOOTCONFIG>) | [hostnamectl](<$HOSTNAMECTL>) | [os-release](<$OSREL>) |
+| $DISTRO_NAME | $ARCH | $KRNVER | [config](<$BOOTCONFIG>) | $hoststr | $osrelstr |
 EOF
 }
 
