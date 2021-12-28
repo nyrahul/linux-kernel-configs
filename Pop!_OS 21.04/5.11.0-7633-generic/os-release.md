@@ -1,0 +1,16 @@
+# /etc/os-release
+```
+NAME="Pop!_OS"
+VERSION="21.04"
+ID=pop
+ID_LIKE="ubuntu debian"
+PRETTY_NAME="Pop!_OS 21.04"
+VERSION_ID="21.04"
+HOME_URL="https://pop.system76.com"
+SUPPORT_URL="https://support.system76.com"
+BUG_REPORT_URL="https://github.com/pop-os/pop/issues"
+PRIVACY_POLICY_URL="https://system76.com/privacy"
+VERSION_CODENAME=hirsute
+UBUNTU_CODENAME=hirsute
+LOGO=distributor-logo-pop-os
+```
