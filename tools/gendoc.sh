@@ -127,8 +127,10 @@ main()
 	trap cleanup EXIT
 	prerequisites
 
-	cp $HDR_MD $MD
-	cat >> "$MD" <<-EOF
+	cat > "$MD" <<-EOF
+<!-- THIS IS AUTO-GENERATED FILE. DO NOT EDIT MANUALLY -->
+`cat $HDR_MD`
+
 # Distro Details
 | Distro | Arch | Kernel | Kernel Config | hostnamectl | os-release |
 |:------:|:----:|:------:|:-------------:|:-----------:|:----------:|
