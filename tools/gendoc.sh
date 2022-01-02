@@ -128,7 +128,7 @@ main()
 	prerequisites
 
 	cat > "$MD" <<-EOF
-<!-- THIS IS AUTO-GENERATED FILE. DO NOT EDIT MANUALLY -->
+<!-- THIS IS AUTO-GENERATED FILE by $0. DO NOT EDIT MANUALLY -->
 `cat $HDR_MD`
 
 # Distro Details
@@ -136,8 +136,8 @@ main()
 |:------:|:----:|:------:|:-------------:|:-----------:|:----------:|
 EOF
 	forEveryPlatform addCommonEntry
-#	forEveryPlatform forEveryComposition
 	cat $FTR_MD >> $MD
+	forEveryPlatform forEveryComposition
 }
 
 main
