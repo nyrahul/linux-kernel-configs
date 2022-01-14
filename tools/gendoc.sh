@@ -3,7 +3,7 @@
 YQ=`dirname $0`/yq
 HDR_MD=`dirname $0`/header.md
 FTR_MD=`dirname $0`/footer.md
-YAML=$1
+YAMLS="$*"
 TMP_OSREL=temporary_osrel.txt
 TMP_HOSTCTL=temporary_hostnamectl.txt
 TMP_BOOTCFG=temporary_bootconfig.txt
@@ -40,26 +40,61 @@ statusline()
 
 prerequisites()
 {
-	[[ "$YAML" == "" ]] && statusline ERR "Usage: $0 <configs.yaml>"
-	[[ ! -f "$YAML" ]] && statusline ERR "$YAML not found"
+	[[ "$YAMLS" == "" ]] && statusline ERR "Usage: $0 <list of yamls>"
 #	[[ "$(which curl)" == "" ]] && statusline ERR "curl not found"
 	[[ ! -f $YQ ]] && statusline ERR "$YQ not found"
 }
 
+isConfigSupported()
+{
+	grep "$comp_config" "$BOOTCONFIG" 2>&1 >/dev/null
+	[[ $? -eq 0 ]] && cfgSupported="y" && return
+	cfgSupported="n"
+}
+
 handleComposition()
 {
-	echo "$PLATFORM $comp_name [$comp_desc] $comp_configs"
+	for ((c=0;;c++)); do
+		comp_config=`$YQ e ".compositions.[$i].configs[$c]" $YAML`
+		[[ "$comp_config" == "null" ]] && break
+		isConfigSupported
+		[[ "$cfgSupported" == "n" ]] && break
+	done
+}
+
+mdAddTableHeader()
+{
+	colstr=""
+	coldash=""
+	for col in "${tab_cols[@]}"; do
+		colstr="$colstr| $col "
+		coldash="$coldash|:-------:"
+	done
+	colstr="$colstr|"
+	coldash="$coldash|"
+}
+
+mdAddTableRow()
+{
+	colstr=""
+	for col in "${tab_cols[@]}"; do
+		colstr="$colstr| $col "
+	done
+	colstr="$colstr|"
 }
 
 forEveryComposition()
 {
+	declare -a tab_cols=("$DISTRO_NAME" "$ARCH" "$KRNVER")
 	for ((i=0;;i++)); do
 		comp_name=`$YQ e ".compositions.[$i].name" $YAML`
 		[[ "$comp_name" == "null" ]] && break
 		comp_desc=`$YQ e ".compositions.[$i].desc" $YAML`
-		comp_configs=`$YQ e ".compositions.[$i].configs" $YAML`
 		handleComposition
+		tab_cols+=("$cfgSupported")
 	done
+	mdAddTableRow
+	echo "$colstr" >> "$MD"
 }
 
 getDistro()
@@ -84,8 +119,8 @@ getArchKrnVer()
 
 addCommonEntry()
 {
-	getDistro
-	getArchKrnVer
+#	getDistro
+#	getArchKrnVer
 	hoststr="NotAvailable"
 	osrelstr="NotAvailable"
 	[[ -f "$HOSTNAMECTL" ]] && hoststr="[file](<$HOSTNAMECTL>)"
@@ -112,8 +147,27 @@ forEveryPlatform()
 		[[ ! -f "$TMP_OSREL" ]] && [[ ! -f "$TMP_HOSTCTL" ]] && 
 			statusline WARN "neither os-release nor hostnamectl found for [$PLATFORM]" && continue
 
+		getDistro
+		getArchKrnVer
 		$1
 	done < <(find . -mindepth 2 -maxdepth 2 -type d | sort)
+}
+
+forEveryConfig()
+{
+	for YAML in `echo $YAMLS`; do
+		declare -a tab_cols=("Distro" "Arch" "Kernel")
+		title=`$YQ e ".title" $YAML`
+		for ((i=0;;i++)); do
+			comp_name=`$YQ e ".compositions.[$i].name" $YAML`
+			[[ "$comp_name" == "null" ]] && break
+			tab_cols+=("$comp_name")
+		done
+		mdAddTableHeader
+		echo -en "\n\n# $title\n$colstr\n$coldash\n" >> "$MD"
+		$*
+		statusline AOK $YAML
+	done
 }
 
 cleanup()
@@ -130,14 +184,15 @@ main()
 	cat > "$MD" <<-EOF
 <!-- THIS IS AUTO-GENERATED FILE by $0. DO NOT EDIT MANUALLY -->
 `cat $HDR_MD`
+`cat $FTR_MD`
 
 # Distro Details
 | Distro | Arch | Kernel | Kernel Config | hostnamectl | os-release |
 |:------:|:----:|:------:|:-------------:|:-----------:|:----------:|
 EOF
 	forEveryPlatform addCommonEntry
-	cat $FTR_MD >> $MD
-	forEveryPlatform forEveryComposition
+
+	forEveryConfig forEveryPlatform forEveryComposition
 }
 
 main

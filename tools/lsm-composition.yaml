@@ -1,0 +1,8 @@
+title: "LSM Support"
+compositions:
+  - name: "BPF_LSM"
+    desc: "BPF_LSM"
+    configs: ["CONFIG_BPF=[ym]", "CONFIG_BPF_LSM=[ym]"]
+  - name: "APPARMOR"
+    desc: "AppArmor"
+    configs: ["CONFIG_SECURITY_APPARMOR=[ym]"]

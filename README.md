@@ -6,6 +6,21 @@ I frequently needed a way to check a kernel config and other OS configuration fo
 **My specific use-case**:
 [KubeArmor](https://github.com/kubearmor/kubearmor) leverages LSMs (Linux Security Modules) and eBPF for in-kernel policy controls. We had to refer to kernel configs for making design/dev decisions regarding whether we can depend on a certain kernel primitive. The boot configs part of this repo helped in making an informed choice.
 
+# Want to add a new OS/Distro and raise a PR?
+
+Use following command to create a Distro/Kernel specific folder with the corresponding markdowns:
+```
+curl -s https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/lk-config-get.sh | bash -s
+```
+if `curl` is not available, use `wget` ...
+```
+wget -q -O- https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/lk-config-get.sh  | bash -s
+```
+
+1. Copy the folder to your github fork
+2. Run `make`
+3. Raise a PR
+
 # Distro Details
 | Distro | Arch | Kernel | Kernel Config | hostnamectl | os-release |
 |:------:|:----:|:------:|:-------------:|:-----------:|:----------:|
@@ -31,17 +46,28 @@ I frequently needed a way to check a kernel config and other OS configuration fo
 | Ubuntu 20.04.3 LTS | x86_64 | 5.11.0 | [config](<./Ubuntu 20.04.3 LTS/5.11.0-1022-aws/bootconfig.md>) | [file](<./Ubuntu 20.04.3 LTS/5.11.0-1022-aws/hostnamectl.md>) | NotAvailable |
 | VMware Photon OS/Linux | x86_64 | 5.10.61 | [config](<./VMware Photon OS_Linux/5.10.61-1.ph4/bootconfig.md>) | [file](<./VMware Photon OS_Linux/5.10.61-1.ph4/hostnamectl.md>) | [file](<./VMware Photon OS_Linux/5.10.61-1.ph4/os-release.md>) |
 
-# Want to add a new OS/Distro and raise a PR?
 
-Use following command to create a Distro/Kernel specific folder with the corresponding markdowns:
-```
-curl -s https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/lk-config-get.sh | bash -s
-```
-if `curl` is not available, use `wget` ...
-```
-wget -q -O- https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/lk-config-get.sh  | bash -s
-```
-
-1. Copy the folder to your github fork
-2. Run `make`
-3. Raise a PR
+# LSM Support
+| Distro | Arch | Kernel | BPF_LSM | APPARMOR |
+|:-------:|:-------:|:-------:|:-------:|:-------:|
+| Amazon Linux 2022 | x86_64 | 5.10.75 | y | n |
+| Amazon Linux 2 | x86_64 | 4.14.252 | n | n |
+| Amazon Linux 2 | x86_64 | 5.10.75 | y | n |
+| CentOS Linux 7 (Core) | x86_64 | 3.10.0 | n | n |
+| CentOS Linux 8 | x86_64 | 4.18.0 | n | n |
+| Container-Optimized OS from Google | x86_64 | 5.4.144 | n | y |
+| Debian GNU/Linux 10 (buster) | x86 | 4.19.181 | n | y |
+| Fedora CoreOS 35.20211203.3.0 | x86_64 | 5.15.6 | y | n |
+| Flatcar Container Linux by Kinvolk 3033.2.0 (Oklo) | x86 | 5.10.84 | y | n |
+| k3OS v0.21.5-k3s2r1 | x86 | 5.4.0 | n | y |
+| Pop!_OS 21.04 | x86 | 5.11.0 | y | y |
+| Pop!_OS 21.10 | x86 | 5.15.5 | y | y |
+| RancherOS v1.5.8 | x86 | 4.14.138 | n | y |
+| Raspbian GNU/Linux 10 (buster) | arm | 5.10.17 | n | y |
+| Red Hat Enterprise Linux 8.4 (Ootpa) | x86_64 | 4.18.0 | n | n |
+| SUSE Linux Enterprise Server 12 SP5 | x86_64 | 4.12.14 | n | y |
+| SUSE Linux Enterprise Server 15 SP3 | x86 | 5.3.18 | y | y |
+| Ubuntu 18.04.6 LTS | x86 | 4.15.0 | n | y |
+| Ubuntu 18.04.6 LTS | x86_64 | 5.4.0 | n | y |
+| Ubuntu 20.04.3 LTS | x86_64 | 5.11.0 | n | y |
+| VMware Photon OS/Linux | x86_64 | 5.10.61 | n | y |
