@@ -1,0 +1,17 @@
+title: "LSM Support"
+compositions:
+  - name: "BPF LSM"
+    desc: "BPF_LSM"
+    configs: ["CONFIG_BPF=[ym]", "CONFIG_BPF_LSM=[ym]"]
+  - name: "AppArmor"
+    desc: "AppArmor"
+    configs: ["CONFIG_SECURITY_APPARMOR=[ym]"]
+  - name: "SELinux"
+    desc: "SELinux"
+    configs: ["CONFIG_SECURITY_SELINUX=[ym]"]
+  - name: "LandLock"
+    desc: "LandLock"
+    configs: ["CONFIG_SECURITY_LANDLOCK=[ym]"]
+  - name: "SMACK"
+    desc: "SMACK"
+    configs: ["CONFIG_SECURITY_SMACK=[ym]"]

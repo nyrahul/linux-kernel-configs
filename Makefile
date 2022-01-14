@@ -1,2 +1,2 @@
 all:
-	./tools/gendoc.sh ./tools/configs.yaml
+	./tools/gendoc.sh ./tools/lsm-composition.yaml ./tools/seccomp-composition.yaml
