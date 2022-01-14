@@ -48,8 +48,8 @@ prerequisites()
 isConfigSupported()
 {
 	grep "$comp_config" "$BOOTCONFIG" 2>&1 >/dev/null
-	[[ $? -eq 0 ]] && cfgSupported="y" && return
-	cfgSupported="n"
+	[[ $? -eq 0 ]] && cfgSupported="Y" && return
+	cfgSupported="N"
 }
 
 handleComposition()
@@ -58,7 +58,7 @@ handleComposition()
 		comp_config=`$YQ e ".compositions.[$i].configs[$c]" $YAML`
 		[[ "$comp_config" == "null" ]] && break
 		isConfigSupported
-		[[ "$cfgSupported" == "n" ]] && break
+		[[ "$cfgSupported" == "N" ]] && break
 	done
 }
 
@@ -110,7 +110,6 @@ getDistro()
 getArchKrnVer()
 {
 	STR=`grep "^# Linux.*Kernel Configuration" $TMP_BOOTCFG | head -1 | awk '{print $2,$3}'`
-	echo "$STR"
 	ARCH=${STR/ */}
 	ARCH=${ARCH/*\//}
 	KRNVER=${STR/* /}
@@ -158,6 +157,7 @@ forEveryConfig()
 	for YAML in `echo $YAMLS`; do
 		declare -a tab_cols=("Distro" "Arch" "Kernel")
 		title=`$YQ e ".title" $YAML`
+		statusline AOK "Processing $YAML $title"
 		for ((i=0;;i++)); do
 			comp_name=`$YQ e ".compositions.[$i].name" $YAML`
 			[[ "$comp_name" == "null" ]] && break
@@ -166,7 +166,7 @@ forEveryConfig()
 		mdAddTableHeader
 		echo -en "\n\n# $title\n$colstr\n$coldash\n" >> "$MD"
 		$*
-		statusline AOK $YAML
+		statusline AOK "Processed $YAML $title"
 	done
 }
 

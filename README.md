@@ -48,26 +48,52 @@ wget -q -O- https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/
 
 
 # LSM Support
-| Distro | Arch | Kernel | BPF_LSM | APPARMOR |
+| Distro | Arch | Kernel | BPF LSM | AppArmor | SELinux | LandLock | SMACK |
+|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| Amazon Linux 2022 | x86_64 | 5.10.75 | Y | N | Y | N | N |
+| Amazon Linux 2 | x86_64 | 4.14.252 | N | N | Y | N | N |
+| Amazon Linux 2 | x86_64 | 5.10.75 | Y | N | Y | N | N |
+| CentOS Linux 7 (Core) | x86_64 | 3.10.0 | N | N | Y | N | N |
+| CentOS Linux 8 | x86_64 | 4.18.0 | N | N | Y | N | N |
+| Container-Optimized OS from Google | x86_64 | 5.4.144 | N | Y | N | N | N |
+| Debian GNU/Linux 10 (buster) | x86 | 4.19.181 | N | Y | Y | N | N |
+| Fedora CoreOS 35.20211203.3.0 | x86_64 | 5.15.6 | Y | N | Y | Y | N |
+| Flatcar Container Linux by Kinvolk 3033.2.0 (Oklo) | x86 | 5.10.84 | Y | N | Y | N | N |
+| k3OS v0.21.5-k3s2r1 | x86 | 5.4.0 | N | Y | Y | N | Y |
+| Pop!_OS 21.04 | x86 | 5.11.0 | Y | Y | Y | N | Y |
+| Pop!_OS 21.10 | x86 | 5.15.5 | Y | Y | Y | Y | Y |
+| RancherOS v1.5.8 | x86 | 4.14.138 | N | Y | Y | N | Y |
+| Raspbian GNU/Linux 10 (buster) | arm | 5.10.17 | N | Y | N | N | N |
+| Red Hat Enterprise Linux 8.4 (Ootpa) | x86_64 | 4.18.0 | N | N | Y | N | N |
+| SUSE Linux Enterprise Server 12 SP5 | x86_64 | 4.12.14 | N | Y | Y | N | N |
+| SUSE Linux Enterprise Server 15 SP3 | x86 | 5.3.18 | Y | Y | Y | N | N |
+| Ubuntu 18.04.6 LTS | x86 | 4.15.0 | N | Y | Y | N | Y |
+| Ubuntu 18.04.6 LTS | x86_64 | 5.4.0 | N | Y | Y | N | Y |
+| Ubuntu 20.04.3 LTS | x86_64 | 5.11.0 | N | Y | Y | N | Y |
+| VMware Photon OS/Linux | x86_64 | 5.10.61 | N | Y | Y | N | Y |
+
+
+# Seccomp Support
+| Distro | Arch | Kernel | Seccomp | Seccomp Filter |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
-| Amazon Linux 2022 | x86_64 | 5.10.75 | y | n |
-| Amazon Linux 2 | x86_64 | 4.14.252 | n | n |
-| Amazon Linux 2 | x86_64 | 5.10.75 | y | n |
-| CentOS Linux 7 (Core) | x86_64 | 3.10.0 | n | n |
-| CentOS Linux 8 | x86_64 | 4.18.0 | n | n |
-| Container-Optimized OS from Google | x86_64 | 5.4.144 | n | y |
-| Debian GNU/Linux 10 (buster) | x86 | 4.19.181 | n | y |
-| Fedora CoreOS 35.20211203.3.0 | x86_64 | 5.15.6 | y | n |
-| Flatcar Container Linux by Kinvolk 3033.2.0 (Oklo) | x86 | 5.10.84 | y | n |
-| k3OS v0.21.5-k3s2r1 | x86 | 5.4.0 | n | y |
-| Pop!_OS 21.04 | x86 | 5.11.0 | y | y |
-| Pop!_OS 21.10 | x86 | 5.15.5 | y | y |
-| RancherOS v1.5.8 | x86 | 4.14.138 | n | y |
-| Raspbian GNU/Linux 10 (buster) | arm | 5.10.17 | n | y |
-| Red Hat Enterprise Linux 8.4 (Ootpa) | x86_64 | 4.18.0 | n | n |
-| SUSE Linux Enterprise Server 12 SP5 | x86_64 | 4.12.14 | n | y |
-| SUSE Linux Enterprise Server 15 SP3 | x86 | 5.3.18 | y | y |
-| Ubuntu 18.04.6 LTS | x86 | 4.15.0 | n | y |
-| Ubuntu 18.04.6 LTS | x86_64 | 5.4.0 | n | y |
-| Ubuntu 20.04.3 LTS | x86_64 | 5.11.0 | n | y |
-| VMware Photon OS/Linux | x86_64 | 5.10.61 | n | y |
+| Amazon Linux 2022 | x86_64 | 5.10.75 | Y | Y |
+| Amazon Linux 2 | x86_64 | 4.14.252 | Y | Y |
+| Amazon Linux 2 | x86_64 | 5.10.75 | Y | Y |
+| CentOS Linux 7 (Core) | x86_64 | 3.10.0 | Y | Y |
+| CentOS Linux 8 | x86_64 | 4.18.0 | Y | Y |
+| Container-Optimized OS from Google | x86_64 | 5.4.144 | Y | Y |
+| Debian GNU/Linux 10 (buster) | x86 | 4.19.181 | Y | Y |
+| Fedora CoreOS 35.20211203.3.0 | x86_64 | 5.15.6 | Y | Y |
+| Flatcar Container Linux by Kinvolk 3033.2.0 (Oklo) | x86 | 5.10.84 | Y | Y |
+| k3OS v0.21.5-k3s2r1 | x86 | 5.4.0 | Y | Y |
+| Pop!_OS 21.04 | x86 | 5.11.0 | Y | Y |
+| Pop!_OS 21.10 | x86 | 5.15.5 | Y | Y |
+| RancherOS v1.5.8 | x86 | 4.14.138 | Y | Y |
+| Raspbian GNU/Linux 10 (buster) | arm | 5.10.17 | Y | Y |
+| Red Hat Enterprise Linux 8.4 (Ootpa) | x86_64 | 4.18.0 | Y | Y |
+| SUSE Linux Enterprise Server 12 SP5 | x86_64 | 4.12.14 | Y | Y |
+| SUSE Linux Enterprise Server 15 SP3 | x86 | 5.3.18 | Y | Y |
+| Ubuntu 18.04.6 LTS | x86 | 4.15.0 | Y | Y |
+| Ubuntu 18.04.6 LTS | x86_64 | 5.4.0 | Y | Y |
+| Ubuntu 20.04.3 LTS | x86_64 | 5.11.0 | Y | Y |
+| VMware Photon OS/Linux | x86_64 | 5.10.61 | Y | Y |
