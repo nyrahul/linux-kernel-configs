@@ -85,7 +85,7 @@ mdAddTableRow()
 
 forEveryComposition()
 {
-	declare -a tab_cols=("$DISTRO_NAME" "$ARCH" "$KRNVER")
+	declare -a tab_cols=("[$DISTRO_NAME]($PLATFORM_PATH)" "$ARCH" "$KRNVER")
 	for ((i=0;;i++)); do
 		comp_name=`$YQ e ".compositions.[$i].name" $YAML`
 		[[ "$comp_name" == "null" ]] && break
@@ -118,14 +118,12 @@ getArchKrnVer()
 
 addCommonEntry()
 {
-#	getDistro
-#	getArchKrnVer
 	hoststr="NotAvailable"
 	osrelstr="NotAvailable"
 	[[ -f "$HOSTNAMECTL" ]] && hoststr="[file](<$HOSTNAMECTL>)"
 	[[ -f "$OSREL" ]] && osrelstr="[file](<$OSREL>)"
 	cat >> "$MD" <<-EOF
-| $DISTRO_NAME | $ARCH | $KRNVER | [config](<$BOOTCONFIG>) | $hoststr | $osrelstr |
+| [$DISTRO_NAME]($PLATFORM_PATH) | $ARCH | $KRNVER | [config](<$BOOTCONFIG>) | $hoststr | $osrelstr |
 EOF
 }
 
@@ -135,6 +133,7 @@ forEveryPlatform()
 	while read line; do
 		rm -f $TMP_OSREL $TMP_HOSTCTL $TMP_BOOTCFG
 		PLATFORM="$line"
+		PLATFORM_PATH="${line// /%20}"
 		BOOTCONFIG="$line/bootconfig.md"
 		[[ ! -f "$BOOTCONFIG" ]] && continue
 		awk '/\`\`\`/,/\`\`\`/' "$BOOTCONFIG" | grep -v "\`\`\`" > $TMP_BOOTCFG
