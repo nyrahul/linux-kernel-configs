@@ -165,6 +165,11 @@ forEveryConfig()
 		mdAddTableHeader
 		echo -en "\n\n# $title\n$colstr\n$coldash\n" >> "$MD"
 		$*
+		for ((i=0;;i++)); do
+			note=`$YQ e ".notes.[$i].note" $YAML`
+			[[ "$note" == "null" ]] && break
+			echo -en "\n> $note\n" >> "$MD"
+		done
 		statusline AOK "Processed $YAML $title"
 	done
 }

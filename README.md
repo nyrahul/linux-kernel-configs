@@ -48,7 +48,7 @@ wget -q -O- https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/
 
 
 # LSM Support
-| Distro | Arch | Kernel | BPF LSM | AppArmor | SELinux | LandLock | SMACK |
+| Distro | Arch | Kernel | BPF LSM | [AppArmor](https://apparmor.net/) | [SELinux](http://selinuxproject.org/) | [LandLock](https://landlock.io/) | [SMACK](https://www.kernel.org/doc/html/v4.18/admin-guide/LSM/Smack.html) |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
 | [Amazon Linux 2022](./Amazon%20Linux%202022/5.10.75-82.359.amzn2022.x86_64) | x86_64 | 5.10.75 | Y | N | Y | N | N |
 | [Amazon Linux 2](./Amazon%20Linux%202/4.14.252-195.483.amzn2.x86_64) | x86_64 | 4.14.252 | N | N | Y | N | N |
@@ -71,6 +71,10 @@ wget -q -O- https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/
 | [Ubuntu 18.04.6 LTS](./Ubuntu%2018.04.6%20LTS/5.4.0-1060-aws) | x86_64 | 5.4.0 | N | Y | Y | N | Y |
 | [Ubuntu 20.04.3 LTS](./Ubuntu%2020.04.3%20LTS/5.11.0-1022-aws) | x86_64 | 5.11.0 | N | Y | Y | N | Y |
 | [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/5.10.61-1.ph4) | x86_64 | 5.10.61 | N | Y | Y | N | Y |
+
+> Few LSMs are not stackable. For example, AppArmor and SELinux are not stackable. If you find that support for both SELinux and AppArmor are available, then only one can be enabled at boot time.
+
+> BPF LSM is the new kid on the block. BPF LSM depends on bpf-helpers and they vary from kernel to kernel.
 
 
 # Seccomp Support

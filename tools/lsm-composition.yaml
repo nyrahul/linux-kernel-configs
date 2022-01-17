@@ -1,17 +1,20 @@
 title: "LSM Support"
+notes:
+  - note: "Few LSMs are not stackable. For example, AppArmor and SELinux are not stackable. If you find that support for both SELinux and AppArmor are available, then only one can be enabled at boot time."
+  - note: "BPF LSM is the new kid on the block. BPF LSM depends on bpf-helpers and they vary from kernel to kernel."
 compositions:
   - name: "BPF LSM"
     desc: "BPF_LSM"
     configs: ["CONFIG_BPF=[ym]", "CONFIG_BPF_LSM=[ym]"]
-  - name: "AppArmor"
+  - name: "[AppArmor](https://apparmor.net/)"
     desc: "AppArmor"
     configs: ["CONFIG_SECURITY_APPARMOR=[ym]"]
-  - name: "SELinux"
+  - name: "[SELinux](http://selinuxproject.org/)"
     desc: "SELinux"
     configs: ["CONFIG_SECURITY_SELINUX=[ym]"]
-  - name: "LandLock"
+  - name: "[LandLock](https://landlock.io/)"
     desc: "LandLock"
     configs: ["CONFIG_SECURITY_LANDLOCK=[ym]"]
-  - name: "SMACK"
+  - name: "[SMACK](https://www.kernel.org/doc/html/v4.18/admin-guide/LSM/Smack.html)"
     desc: "SMACK"
     configs: ["CONFIG_SECURITY_SMACK=[ym]"]
