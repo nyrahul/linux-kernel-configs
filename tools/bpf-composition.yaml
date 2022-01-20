@@ -1,0 +1,11 @@
+title: "BPF/eBPF Support"
+notes:
+  - note: "CGROUP_BPF: Support for eBPF programs attached to cgroups. Allow attaching eBPF programs to a cgroup using the bpf(2) syscall command BPF_PROG_ATTACH."
+  - note: "yy"
+compositions:
+  - name: "CONFIG_BPF"
+    desc: "BPF"
+    configs: ["CONFIG_BPF=[ym]"]
+  - name: "[CGROUP_BPF](## \"Support for eBPF programs attached to cgroups.\")"
+    desc: "Cgroup BPF"
+    configs: ["CONFIG_CGROUP_BPF=[ym]"]
