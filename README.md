@@ -44,6 +44,7 @@ wget -q -O- https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/
 | [Ubuntu 18.04.6 LTS](./Ubuntu%2018.04.6%20LTS/4.15.0-163-generic) | x86 | 4.15.0 | [config](<./Ubuntu 18.04.6 LTS/4.15.0-163-generic/bootconfig.md>) | [file](<./Ubuntu 18.04.6 LTS/4.15.0-163-generic/hostnamectl.md>) | [file](<./Ubuntu 18.04.6 LTS/4.15.0-163-generic/os-release.md>) |
 | [Ubuntu 18.04.6 LTS](./Ubuntu%2018.04.6%20LTS/5.4.0-1060-aws) | x86_64 | 5.4.0 | [config](<./Ubuntu 18.04.6 LTS/5.4.0-1060-aws/bootconfig.md>) | [file](<./Ubuntu 18.04.6 LTS/5.4.0-1060-aws/hostnamectl.md>) | NotAvailable |
 | [Ubuntu 20.04.3 LTS](./Ubuntu%2020.04.3%20LTS/5.11.0-1022-aws) | x86_64 | 5.11.0 | [config](<./Ubuntu 20.04.3 LTS/5.11.0-1022-aws/bootconfig.md>) | [file](<./Ubuntu 20.04.3 LTS/5.11.0-1022-aws/hostnamectl.md>) | NotAvailable |
+| [Ubuntu 20.04.3 LTS](./Ubuntu%2020.04.3%20LTS/5.11.0-1026-gcp) | x86 | 5.11.0 | [config](<./Ubuntu 20.04.3 LTS/5.11.0-1026-gcp/bootconfig.md>) | [file](<./Ubuntu 20.04.3 LTS/5.11.0-1026-gcp/hostnamectl.md>) | [file](<./Ubuntu 20.04.3 LTS/5.11.0-1026-gcp/os-release.md>) |
 | [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/5.10.61-1.ph4) | x86_64 | 5.10.61 | [config](<./VMware Photon OS_Linux/5.10.61-1.ph4/bootconfig.md>) | [file](<./VMware Photon OS_Linux/5.10.61-1.ph4/hostnamectl.md>) | [file](<./VMware Photon OS_Linux/5.10.61-1.ph4/os-release.md>) |
 
 
@@ -70,6 +71,7 @@ wget -q -O- https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/
 | [Ubuntu 18.04.6 LTS](./Ubuntu%2018.04.6%20LTS/4.15.0-163-generic) | x86 | 4.15.0 | N | Y | Y | N | Y |
 | [Ubuntu 18.04.6 LTS](./Ubuntu%2018.04.6%20LTS/5.4.0-1060-aws) | x86_64 | 5.4.0 | N | Y | Y | N | Y |
 | [Ubuntu 20.04.3 LTS](./Ubuntu%2020.04.3%20LTS/5.11.0-1022-aws) | x86_64 | 5.11.0 | N | Y | Y | N | Y |
+| [Ubuntu 20.04.3 LTS](./Ubuntu%2020.04.3%20LTS/5.11.0-1026-gcp) | x86 | 5.11.0 | N | Y | Y | N | Y |
 | [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/5.10.61-1.ph4) | x86_64 | 5.10.61 | N | Y | Y | N | Y |
 
 > Few LSMs are not stackable. For example, AppArmor and SELinux are not stackable. If you find that support for both SELinux and AppArmor are available, then only one can be enabled at boot time.
@@ -100,4 +102,5 @@ wget -q -O- https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/
 | [Ubuntu 18.04.6 LTS](./Ubuntu%2018.04.6%20LTS/4.15.0-163-generic) | x86 | 4.15.0 | Y | Y |
 | [Ubuntu 18.04.6 LTS](./Ubuntu%2018.04.6%20LTS/5.4.0-1060-aws) | x86_64 | 5.4.0 | Y | Y |
 | [Ubuntu 20.04.3 LTS](./Ubuntu%2020.04.3%20LTS/5.11.0-1022-aws) | x86_64 | 5.11.0 | Y | Y |
+| [Ubuntu 20.04.3 LTS](./Ubuntu%2020.04.3%20LTS/5.11.0-1026-gcp) | x86 | 5.11.0 | Y | Y |
 | [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/5.10.61-1.ph4) | x86_64 | 5.10.61 | Y | Y |
