@@ -48,8 +48,8 @@ prerequisites()
 isConfigSupported()
 {
 	grep "$comp_config" "$BOOTCONFIG" 2>&1 >/dev/null
-	[[ $? -eq 0 ]] && cfgSupported="Y" && return
-	cfgSupported="N"
+	[[ $? -eq 0 ]] && cfgSupported=":heavy_check_mark:" && return
+	cfgSupported=":x:"
 }
 
 handleComposition()
@@ -58,7 +58,7 @@ handleComposition()
 		comp_config=`$YQ e ".compositions.[$i].configs[$c]" $YAML`
 		[[ "$comp_config" == "null" ]] && break
 		isConfigSupported
-		[[ "$cfgSupported" == "N" ]] && break
+		[[ "$cfgSupported" == ":x:" ]] && break
 	done
 }
 
