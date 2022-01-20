@@ -16,7 +16,7 @@ compositions:
   - name: "[BPF_KPROBE_OVERRIDE](https://cateee.net/lkddb/web-lkddb/BPF_KPROBE_OVERRIDE.html)"
     configs: ["CONFIG_BPF_KPROBE_OVERRIDE=[ym]"]
   - name: "[BPFILTER](https://cateee.net/lkddb/web-lkddb/BPFILTER.html)"
-    configs: ["CONFIG_BPFITER=[ym]"]
+    configs: ["CONFIG_BPFILTER=[ym]"]
   - name: "[NET_ACT_BPF](https://cateee.net/lkddb/web-lkddb/NET_ACT_BPF.html)"
     configs: ["CONFIG_NET_ACT_BPF=[ym]"]
   - name: "[NET_CLS_BPF](https://cateee.net/lkddb/web-lkddb/NET_CLS_BPF.html)"
