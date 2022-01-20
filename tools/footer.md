@@ -1,5 +1,8 @@
 
-# Want to add a new OS/Distro and raise a PR?
+# Contributions
+
+<details>
+  <summary>Adding a new distro</summary>
 
 Use following command to create a Distro/Kernel specific folder with the corresponding markdowns:
 ```
@@ -13,3 +16,19 @@ wget -q -O- https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/
 1. Copy the folder to your github fork
 2. Run `make`
 3. Raise a PR
+
+</details>
+
+<details>
+  <summary>Adding a new composition</summary>
+
+Composition means a set of kernel configuration options shown in the context of all the distros.
+"[LSM Support](tools/lsm-composition.yaml)", "[Seccomp Support](tools/seccomp-composition.yaml)" are examples of the compositions.
+
+To create a new composition:
+1. Create a new composition file. Use [lsm-composition.yaml](tools/lsm-composition.yaml) as ref.
+2. Add the composition file in the [Makefile](Makefile)
+3. Do a `make`
+4. Check if the composition is reflected in the [README.md](README.md)
+
+</details>
