@@ -1,0 +1,22 @@
+name: CI-Verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-readme-updated:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v2
+
+      - name: Do Make
+        run: make
+      - name: Check if README.md is updated
+        run: |
+          git diff | cat
+          val=$(git diff | wc -l) && [[ $val -ne 0 ]] && echo "Changes not updated. Run make and raise PR with any modified/added files" && exit 1
+          echo "All Good" && exit 0

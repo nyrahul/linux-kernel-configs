@@ -199,4 +199,5 @@ EOF
 	forEveryConfig forEveryPlatform forEveryComposition
 }
 
+export LC_ALL=en_US.UTF-8
 main
