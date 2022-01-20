@@ -6,7 +6,10 @@ I frequently needed a way to check a kernel config and other OS configuration fo
 **My specific use-case**:
 [KubeArmor](https://github.com/kubearmor/kubearmor) leverages LSMs (Linux Security Modules) and eBPF for in-kernel policy controls. We had to refer to kernel configs for making design/dev decisions regarding whether we can depend on a certain kernel primitive. The boot configs part of this repo helped in making an informed choice.
 
-# Want to add a new OS/Distro and raise a PR?
+# Contributions
+
+<details>
+  <summary>Adding a new distro</summary>
 
 Use following command to create a Distro/Kernel specific folder with the corresponding markdowns:
 ```
@@ -20,6 +23,22 @@ wget -q -O- https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/
 1. Copy the folder to your github fork
 2. Run `make`
 3. Raise a PR
+
+</details>
+
+<details>
+  <summary>Adding a new composition</summary>
+
+Composition means a set of kernel configuration options shown in the context of all the distros.
+"[LSM Support](tools/lsm-composition.yaml)", "[Seccomp Support](tools/seccomp-composition.yaml)" are examples of the compositions.
+
+To create a new composition:
+1. Create a new composition file. Use [lsm-composition.yaml](tools/lsm-composition.yaml) as ref.
+2. Add the composition file in the [Makefile](Makefile)
+3. Do a `make`
+4. Check if the composition is reflected in the [README.md](README.md)
+
+</details>
 
 # Distro Details
 | Distro | Arch | Kernel | Kernel Config | hostnamectl | os-release |
