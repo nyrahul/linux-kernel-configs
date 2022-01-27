@@ -1,5 +1,6 @@
 <!-- THIS IS AUTO-GENERATED FILE by ./tools/gendoc.sh. DO NOT EDIT MANUALLY -->
 # Linux Kernel Configs for Popular Distros
+![CI status](https://github.com/nyrahul/linux-kernel-configs/actions/workflows/ci-verify.yml/badge.svg)
 
 I frequently needed a way to check a kernel config and other OS configuration for popular distributions to make a dev/design decision.
 
