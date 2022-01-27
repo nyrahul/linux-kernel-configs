@@ -95,8 +95,6 @@ To create a new composition:
 
 > CGROUP_BPF: Support for eBPF programs attached to cgroups. Allow attaching eBPF programs to a cgroup using the bpf(2) syscall command BPF_PROG_ATTACH.
 
-> yy
-
 
 # LSM Support
 | Distro | Arch | Kernel | BPF LSM | [AppArmor](https://apparmor.net/) | [SELinux](http://selinuxproject.org/) | [LandLock](https://landlock.io/) | [SMACK](https://www.kernel.org/doc/html/v4.18/admin-guide/LSM/Smack.html) |
