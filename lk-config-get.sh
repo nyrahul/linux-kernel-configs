@@ -43,6 +43,21 @@ getOStype()
 	DIRNAME="${DIRNAME/\//_}"
 }
 
+dump_lsmlist()
+{
+	MD="$DIRNAME/lsm.md"
+	cmd2use="cat /sys/kernel/security/lsm"
+	cat > "$MD" <<-EOF
+# Boot Config
+
+Command used: \`$cmd2use\`
+\`\`\`
+`$cmd2use`
+\`\`\`
+EOF
+	statusline AOK "dumped lsm config to [$MD] ... used cmd:[$cmd2use]"
+}
+
 dump_bootconfig()
 {
 	MD="$DIRNAME/bootconfig.md"
@@ -114,6 +129,7 @@ getDirname()
 main()
 {
 	dump_bootconfig
+	dump_lsmlist
 	dump_hostnamectl
 	dump_os_release
 }
