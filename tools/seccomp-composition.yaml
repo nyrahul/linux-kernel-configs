@@ -1,8 +1,0 @@
-title: "Seccomp Support"
-compositions:
-  - name: "Seccomp"
-    desc: "Seccomp"
-    configs: ["CONFIG_SECCOMP=[ym]"]
-  - name: "Seccomp Filter"
-    desc: "Seccomp Filter"
-    configs: ["CONFIG_SECCOMP_FILTER=[ym]"]

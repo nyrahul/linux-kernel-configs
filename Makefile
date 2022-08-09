@@ -1,2 +1,3 @@
+COMPOSITIONS = $(wildcard tools/compositions/*.yaml)
 all:
-	./tools/gendoc.sh ./tools/bpf-composition.yaml ./tools/lsm-composition.yaml ./tools/seccomp-composition.yaml ./tools/audit-composition.yaml
+	./tools/gendoc.sh $(COMPOSITIONS)

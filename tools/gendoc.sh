@@ -163,13 +163,19 @@ forEveryConfig()
 			tab_cols+=("$comp_name")
 		done
 		mdAddTableHeader
-		echo -en "\n\n# $title\n$colstr\n$coldash\n" >> "$MD"
+		cat >> "$MD" <<-EOF
+<details><summary><h3>$title</h3></summary><p>
+EOF
+		echo -en "\n$colstr\n$coldash\n" >> "$MD"
 		$*
 		for ((i=0;;i++)); do
 			note=`$YQ e ".notes.[$i].note" $YAML`
 			[[ "$note" == "null" ]] && break
 			echo -en "\n> $note\n" >> "$MD"
 		done
+		cat >> "$MD" <<-EOF
+</p></details>
+EOF
 		statusline AOK "Processed $YAML $title"
 	done
 }
@@ -186,17 +192,27 @@ main()
 	prerequisites
 
 	cat > "$MD" <<-EOF
-<!-- THIS IS AUTO-GENERATED FILE by $0. DO NOT EDIT MANUALLY -->
+<!-- THIS IS AN AUTO-GENERATED FILE by $0. DO NOT EDIT MANUALLY -->
 `cat $HDR_MD`
-`cat $FTR_MD`
 
-# Distro Details
+<details><summary><h2>Distribution Details</h2></summary><p>
+
 | Distro | Arch | Kernel | Kernel Config | hostnamectl | os-release |
 |:------:|:----:|:------:|:-------------:|:-----------:|:----------:|
 EOF
 	forEveryPlatform addCommonEntry
+	cat >> "$MD" <<-EOF
+</p></details>
+
+## Compositions
+EOF
 
 	forEveryConfig forEveryPlatform forEveryComposition
+
+	# set the footer
+	cat >> "$MD" <<-EOF
+`cat $FTR_MD`
+EOF
 }
 
 export LC_ALL=en_US.UTF-8
