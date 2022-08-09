@@ -1,5 +1,5 @@
 
-# Contributions
+## Contributions welcome...
 
 <details>
   <summary>Adding a new distro</summary>
@@ -23,12 +23,12 @@ wget -q -O- https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/
   <summary>Adding a new composition</summary>
 
 Composition means a set of kernel configuration options shown in the context of all the distros.
-"[LSM Support](tools/lsm-composition.yaml)", "[Seccomp Support](tools/seccomp-composition.yaml)" are examples of the compositions.
+"[LSM Support](tools/compositions/lsm.yaml)", "[Seccomp Support](tools/compositions/seccomp.yaml)" are examples of the compositions.
 
 To create a new composition:
-1. Create a new composition file. Use [lsm-composition.yaml](tools/lsm-composition.yaml) as ref.
-2. Add the composition file in the [Makefile](Makefile)
-3. Do a `make`
-4. Check if the composition is reflected in the [README.md](README.md)
+1. Create a new composition file. Use [tools/compositions/lsm.yaml](tools/compositions/lsm.yaml) as ref.
+2. Do a `make`
+3. Check if the composition is reflected in the [README.md](README.md)
+4. Raise a PR with the changes
 
 </details>
