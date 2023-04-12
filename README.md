@@ -17,6 +17,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Amazon Linux 2](./Amazon%20Linux%202/5.10.75-79.358.amzn2.x86_64) | x86_64 | 5.10.75 | [config](<./Amazon Linux 2/5.10.75-79.358.amzn2.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2/5.10.75-79.358.amzn2.x86_64/hostnamectl.md>) | NotAvailable |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86 | [config](<./Amazon Linux 2/5.15.86-53.137.amzn2.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2/5.15.86-53.137.amzn2.x86_64/hostnamectl.md>) | [file](<./Amazon Linux 2/5.15.86-53.137.amzn2.x86_64/os-release.md>) |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.4.226-129.415.amzn2.x86_64) | x86_64 | 5.4.226 | [config](<./Amazon Linux 2/5.4.226-129.415.amzn2.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2/5.4.226-129.415.amzn2.x86_64/hostnamectl.md>) | [file](<./Amazon Linux 2/5.4.226-129.415.amzn2.x86_64/os-release.md>) |
+| [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1 | [config](<./Arch Linux/6.2.1-arch1-1/bootconfig.md>) | [file](<./Arch Linux/6.2.1-arch1-1/hostnamectl.md>) | [file](<./Arch Linux/6.2.1-arch1-1/os-release.md>) |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0 | [config](<./CentOS Linux 7 (Core)/3.10.0-1127.el7.x86_64/bootconfig.md>) | [file](<./CentOS Linux 7 (Core)/3.10.0-1127.el7.x86_64/hostnamectl.md>) | [file](<./CentOS Linux 7 (Core)/3.10.0-1127.el7.x86_64/os-release.md>) |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-240.1.1.el8_3.x86_64) | x86_64 | 4.18.0 | [config](<./CentOS Linux 8/4.18.0-240.1.1.el8_3.x86_64/bootconfig.md>) | [file](<./CentOS Linux 8/4.18.0-240.1.1.el8_3.x86_64/hostnamectl.md>) | NotAvailable |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-348.7.1.el8_5.x86_64) | x86_64 | 4.18.0 | [config](<./CentOS Linux 8/4.18.0-348.7.1.el8_5.x86_64/bootconfig.md>) | [file](<./CentOS Linux 8/4.18.0-348.7.1.el8_5.x86_64/hostnamectl.md>) | [file](<./CentOS Linux 8/4.18.0-348.7.1.el8_5.x86_64/os-release.md>) |
@@ -58,6 +59,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Amazon Linux 2](./Amazon%20Linux%202/5.10.75-79.358.amzn2.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.4.226-129.415.amzn2.x86_64) | x86_64 | 5.4.226 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-240.1.1.el8_3.x86_64) | x86_64 | 4.18.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-348.7.1.el8_5.x86_64) | x86_64 | 4.18.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -99,6 +101,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Amazon Linux 2](./Amazon%20Linux%202/5.10.75-79.358.amzn2.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.4.226-129.415.amzn2.x86_64) | x86_64 | 5.4.226 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :x: |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-240.1.1.el8_3.x86_64) | x86_64 | 4.18.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-348.7.1.el8_5.x86_64) | x86_64 | 4.18.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
@@ -140,6 +143,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Amazon Linux 2](./Amazon%20Linux%202/5.10.75-79.358.amzn2.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.4.226-129.415.amzn2.x86_64) | x86_64 | 5.4.226 | :x: | :x: | :heavy_check_mark: | :x: | :x: |
+| [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0 | :x: | :x: | :heavy_check_mark: | :x: | :x: |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-240.1.1.el8_3.x86_64) | x86_64 | 4.18.0 | :x: | :x: | :heavy_check_mark: | :x: | :x: |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-348.7.1.el8_5.x86_64) | x86_64 | 4.18.0 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: |
@@ -183,6 +187,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Amazon Linux 2](./Amazon%20Linux%202/5.10.75-79.358.amzn2.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86 | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.4.226-129.415.amzn2.x86_64) | x86_64 | 5.4.226 | :heavy_check_mark: | :heavy_check_mark: |
+| [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1 | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0 | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-240.1.1.el8_3.x86_64) | x86_64 | 4.18.0 | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-348.7.1.el8_5.x86_64) | x86_64 | 4.18.0 | :heavy_check_mark: | :heavy_check_mark: |
