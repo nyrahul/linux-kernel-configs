@@ -2,15 +2,26 @@
 
    on:
      push:
-       branches: [ master ]
+       branches: [ main ]
      pull_request:
-       branches: [ master ]
+       branches: [ main ]
 
    jobs:
     build:
       runs-on: ubuntu-latest
       steps:
       - name: checkout repo
-        uses: actions/checkout@main
+        uses: actions/checkout@v3
       - name: build application
-        run: make
+        run: |
+           make
+      - name: Commit changes
+         run: |
+           git config --global user.email "no-reply@github.com"
+           git config --global user.name "GitHub Actions"
+           git add readme.md
+           git commit -m "Update readme"
+           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+           git push
+         env:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
