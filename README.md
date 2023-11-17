@@ -1,4 +1,4 @@
-<!-- THIS IS AN AUTO-GENERATED FILE by G:\accuknox\linux-kernel-configs\tools\gendoc.sh. DO NOT EDIT MANUALLY -->
+<!-- THIS IS AN AUTO-GENERATED FILE by ./tools/gendoc.sh. DO NOT EDIT MANUALLY -->
 # Linux Kernel Configs for Popular Distros
 ![CI status](https://github.com/nyrahul/linux-kernel-configs/actions/workflows/ci-verify.yml/badge.svg)
 
@@ -11,12 +11,12 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | Kernel Config | hostnamectl | os-release |
 |:------:|:----:|:------:|:-------------:|:-----------:|:----------:|
+| [Amazon Linux 2022](./Amazon%20Linux%202022/5.10.75-82.359.amzn2022.x86_64) | x86_64 | 5.10.75 | [config](<./Amazon Linux 2022/5.10.75-82.359.amzn2022.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2022/5.10.75-82.359.amzn2022.x86_64/hostnamectl.md>) | [file](<./Amazon Linux 2022/5.10.75-82.359.amzn2022.x86_64/os-release.md>) |
+| [Amazon Linux 2023](./Amazon%20Linux%202023/6.1.19-30.43.amzn2023.x86_64) | x86_64 | 6.1.19 | [config](<./Amazon Linux 2023/6.1.19-30.43.amzn2023.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2023/6.1.19-30.43.amzn2023.x86_64/hostnamectl.md>) | [file](<./Amazon Linux 2023/6.1.19-30.43.amzn2023.x86_64/os-release.md>) |
 | [Amazon Linux 2](./Amazon%20Linux%202/4.14.252-195.483.amzn2.x86_64) | x86_64 | 4.14.252 | [config](<./Amazon Linux 2/4.14.252-195.483.amzn2.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2/4.14.252-195.483.amzn2.x86_64/hostnamectl.md>) | NotAvailable |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.10.75-79.358.amzn2.x86_64) | x86_64 | 5.10.75 | [config](<./Amazon Linux 2/5.10.75-79.358.amzn2.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2/5.10.75-79.358.amzn2.x86_64/hostnamectl.md>) | NotAvailable |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86 | [config](<./Amazon Linux 2/5.15.86-53.137.amzn2.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2/5.15.86-53.137.amzn2.x86_64/hostnamectl.md>) | [file](<./Amazon Linux 2/5.15.86-53.137.amzn2.x86_64/os-release.md>) |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.4.226-129.415.amzn2.x86_64) | x86_64 | 5.4.226 | [config](<./Amazon Linux 2/5.4.226-129.415.amzn2.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2/5.4.226-129.415.amzn2.x86_64/hostnamectl.md>) | [file](<./Amazon Linux 2/5.4.226-129.415.amzn2.x86_64/os-release.md>) |
-| [Amazon Linux 2022](./Amazon%20Linux%202022/5.10.75-82.359.amzn2022.x86_64) | x86_64 | 5.10.75 | [config](<./Amazon Linux 2022/5.10.75-82.359.amzn2022.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2022/5.10.75-82.359.amzn2022.x86_64/hostnamectl.md>) | [file](<./Amazon Linux 2022/5.10.75-82.359.amzn2022.x86_64/os-release.md>) |
-| [Amazon Linux 2023](./Amazon%20Linux%202023/6.1.19-30.43.amzn2023.x86_64) | x86_64 | 6.1.19 | [config](<./Amazon Linux 2023/6.1.19-30.43.amzn2023.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2023/6.1.19-30.43.amzn2023.x86_64/hostnamectl.md>) | [file](<./Amazon Linux 2023/6.1.19-30.43.amzn2023.x86_64/os-release.md>) |
 | [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1 | [config](<./Arch Linux/6.2.1-arch1-1/bootconfig.md>) | [file](<./Arch Linux/6.2.1-arch1-1/hostnamectl.md>) | [file](<./Arch Linux/6.2.1-arch1-1/os-release.md>) |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0 | [config](<./CentOS Linux 7 (Core)/3.10.0-1127.el7.x86_64/bootconfig.md>) | [file](<./CentOS Linux 7 (Core)/3.10.0-1127.el7.x86_64/hostnamectl.md>) | [file](<./CentOS Linux 7 (Core)/3.10.0-1127.el7.x86_64/os-release.md>) |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-240.1.1.el8_3.x86_64) | x86_64 | 4.18.0 | [config](<./CentOS Linux 8/4.18.0-240.1.1.el8_3.x86_64/bootconfig.md>) | [file](<./CentOS Linux 8/4.18.0-240.1.1.el8_3.x86_64/hostnamectl.md>) | NotAvailable |
@@ -57,12 +57,12 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | [CONFIG_AUDIT](https://cateee.net/lkddb/web-lkddb/AUDIT.html) | [CONFIG_AUDIT_ARCH](https://cateee.net/lkddb/web-lkddb/AUDIT_ARCH.html) | [CONFIG_AUDITSYSCALL](https://cateee.net/lkddb/web-lkddb/AUDITSYSCALL.html) |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Amazon Linux 2022](./Amazon%20Linux%202022/5.10.75-82.359.amzn2022.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Amazon Linux 2023](./Amazon%20Linux%202023/6.1.19-30.43.amzn2023.x86_64) | x86_64 | 6.1.19 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/4.14.252-195.483.amzn2.x86_64) | x86_64 | 4.14.252 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.10.75-79.358.amzn2.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.4.226-129.415.amzn2.x86_64) | x86_64 | 5.4.226 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| [Amazon Linux 2022](./Amazon%20Linux%202022/5.10.75-82.359.amzn2022.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| [Amazon Linux 2023](./Amazon%20Linux%202023/6.1.19-30.43.amzn2023.x86_64) | x86_64 | 6.1.19 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-240.1.1.el8_3.x86_64) | x86_64 | 4.18.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -103,12 +103,12 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | CONFIG_BPF | [CGROUP_BPF](https://cateee.net/lkddb/web-lkddb/CGROUP_BPF.html) | [BPF_SYSCALL](https://cateee.net/lkddb/web-lkddb/BPF_SYSCALL.html) | [BPF_JIT](https://cateee.net/lkddb/web-lkddb/BPF_JIT.html) | [BPF_LSM](https://cateee.net/lkddb/web-lkddb/BPF_LSM.html) | [BPF_KPROBE_OVERRIDE](https://cateee.net/lkddb/web-lkddb/BPF_KPROBE_OVERRIDE.html) | [BPFILTER](https://cateee.net/lkddb/web-lkddb/BPFILTER.html) | [NET_ACT_BPF](https://cateee.net/lkddb/web-lkddb/NET_ACT_BPF.html) | [NET_CLS_BPF](https://cateee.net/lkddb/web-lkddb/NET_CLS_BPF.html) | [BPF_EVENTS](https://cateee.net/lkddb/web-lkddb/BPF_EVENTS.html) | [LWTUNNEL_BPF](https://cateee.net/lkddb/web-lkddb/LWTUNNEL_BPF.html) | [BPF_STREAM_PARSER](https://cateee.net/lkddb/web-lkddb/BPF_STREAM_PARSER.html) | [NETFILTER_XT_MATCH_BPF](https://cateee.net/lkddb/web-lkddb/NETFILTER_XT_MATCH_BPF.html) | [IPV6_SEG6_BPF](https://cateee.net/lkddb/web-lkddb/IPV6_SEG6_BPF.html) |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Amazon Linux 2022](./Amazon%20Linux%202022/5.10.75-82.359.amzn2022.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Amazon Linux 2023](./Amazon%20Linux%202023/6.1.19-30.43.amzn2023.x86_64) | x86_64 | 6.1.19 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/4.14.252-195.483.amzn2.x86_64) | x86_64 | 4.14.252 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.10.75-79.358.amzn2.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.4.226-129.415.amzn2.x86_64) | x86_64 | 5.4.226 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| [Amazon Linux 2022](./Amazon%20Linux%202022/5.10.75-82.359.amzn2022.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| [Amazon Linux 2023](./Amazon%20Linux%202023/6.1.19-30.43.amzn2023.x86_64) | x86_64 | 6.1.19 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :x: |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-240.1.1.el8_3.x86_64) | x86_64 | 4.18.0 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
@@ -149,12 +149,12 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | BPF LSM | [AppArmor](https://apparmor.net/) | [SELinux](http://selinuxproject.org/) | [LandLock](https://landlock.io/) | [SMACK](https://www.kernel.org/doc/html/v4.18/admin-guide/LSM/Smack.html) |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Amazon Linux 2022](./Amazon%20Linux%202022/5.10.75-82.359.amzn2022.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: |
+| [Amazon Linux 2023](./Amazon%20Linux%202023/6.1.19-30.43.amzn2023.x86_64) | x86_64 | 6.1.19 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: |
 | [Amazon Linux 2](./Amazon%20Linux%202/4.14.252-195.483.amzn2.x86_64) | x86_64 | 4.14.252 | :x: | :x: | :heavy_check_mark: | :x: | :x: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.10.75-79.358.amzn2.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.4.226-129.415.amzn2.x86_64) | x86_64 | 5.4.226 | :x: | :x: | :heavy_check_mark: | :x: | :x: |
-| [Amazon Linux 2022](./Amazon%20Linux%202022/5.10.75-82.359.amzn2022.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: |
-| [Amazon Linux 2023](./Amazon%20Linux%202023/6.1.19-30.43.amzn2023.x86_64) | x86_64 | 6.1.19 | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: |
 | [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0 | :x: | :x: | :heavy_check_mark: | :x: | :x: |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-240.1.1.el8_3.x86_64) | x86_64 | 4.18.0 | :x: | :x: | :heavy_check_mark: | :x: | :x: |
@@ -197,12 +197,12 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | Seccomp | Seccomp Filter |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Amazon Linux 2022](./Amazon%20Linux%202022/5.10.75-82.359.amzn2022.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :heavy_check_mark: |
+| [Amazon Linux 2023](./Amazon%20Linux%202023/6.1.19-30.43.amzn2023.x86_64) | x86_64 | 6.1.19 | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/4.14.252-195.483.amzn2.x86_64) | x86_64 | 4.14.252 | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.10.75-79.358.amzn2.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86 | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.4.226-129.415.amzn2.x86_64) | x86_64 | 5.4.226 | :heavy_check_mark: | :heavy_check_mark: |
-| [Amazon Linux 2022](./Amazon%20Linux%202022/5.10.75-82.359.amzn2022.x86_64) | x86_64 | 5.10.75 | :heavy_check_mark: | :heavy_check_mark: |
-| [Amazon Linux 2023](./Amazon%20Linux%202023/6.1.19-30.43.amzn2023.x86_64) | x86_64 | 6.1.19 | :heavy_check_mark: | :heavy_check_mark: |
 | [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1 | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0 | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-240.1.1.el8_3.x86_64) | x86_64 | 4.18.0 | :heavy_check_mark: | :heavy_check_mark: |
