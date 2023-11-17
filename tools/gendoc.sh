@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-YQ=`dirname $0`/yq
+YQ=`dirname $0`/yq # Use yq.exe on windows
 HDR_MD=`dirname $0`/header.md
 FTR_MD=`dirname $0`/footer.md
 YAMLS="$*"
