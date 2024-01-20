@@ -113,7 +113,7 @@ getArchKrnVer()
 	ARCH=${STR/ */}
 	ARCH=${ARCH/*\//}
 	KRNVER=${STR/* /}
-	KRNVER=${KRNVER/-*/}
+#	KRNVER=${KRNVER/-*/}
 }
 
 addCommonEntry()
