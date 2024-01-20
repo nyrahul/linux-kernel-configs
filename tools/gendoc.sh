@@ -132,6 +132,7 @@ forEveryPlatform()
 	[[ "$1" == "" ]] && statusline ERR "invalid use of forEveryPlatform"
 	while read line; do
 		rm -f $TMP_OSREL $TMP_HOSTCTL $TMP_BOOTCFG
+		line=`echo $line | sed 's/|/\//g'`
 		PLATFORM="$line"
 		PLATFORM_PATH="${line// /%20}"
 		BOOTCONFIG="$line/bootconfig.md"
@@ -148,7 +149,8 @@ forEveryPlatform()
 		getDistro
 		getArchKrnVer
 		$1
-	done < <(find . -mindepth 2 -maxdepth 2 -type d | sort)
+	done < <(find . -mindepth 2 -maxdepth 2 -type d | \grep ".*/.*/[0-9]\..*" | sed 's/\//|/g' | sort -k3 -t'|' -Vr)
+	#done < <(find . -mindepth 2 -maxdepth 2 -type d | sort)
 }
 
 forEveryConfig()
