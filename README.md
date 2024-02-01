@@ -52,6 +52,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Amazon Linux 2](./Amazon%20Linux%202/4.14.252-195.483.amzn2.x86_64) | x86_64 | 4.14.252-195.483.amzn2.x86_64 | [config](<./Amazon Linux 2/4.14.252-195.483.amzn2.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2/4.14.252-195.483.amzn2.x86_64/hostnamectl.md>) | NotAvailable |
 | [RancherOS v1.5.8](./RancherOS%20v1.5.8/4.14.138-rancher) | x86 | 4.14.138 | [config](<./RancherOS v1.5.8/4.14.138-rancher/bootconfig.md>) | NotAvailable | [file](<./RancherOS v1.5.8/4.14.138-rancher/os-release.md>) |
 | [SUSE Linux Enterprise Server 12 SP5](./SUSE%20Linux%20Enterprise%20Server%2012%20SP5/4.12.14-122.54-default) | x86_64 | 4.12.14 | [config](<./SUSE Linux Enterprise Server 12 SP5/4.12.14-122.54-default/bootconfig.md>) | [file](<./SUSE Linux Enterprise Server 12 SP5/4.12.14-122.54-default/hostnamectl.md>) | NotAvailable |
+| [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1160.102.1.el7.x86_64) | x86_64 | 3.10.0-1160.102.1.el7.x86_64 | [config](<./CentOS Linux 7 (Core)/3.10.0-1160.102.1.el7.x86_64/bootconfig.md>) | [file](<./CentOS Linux 7 (Core)/3.10.0-1160.102.1.el7.x86_64/hostnamectl.md>) | [file](<./CentOS Linux 7 (Core)/3.10.0-1160.102.1.el7.x86_64/os-release.md>) |
 | [Red Hat Enterprise Linux Server 7.9 (Maipo)](./Red%20Hat%20Enterprise%20Linux%20Server%207.9%20(Maipo)/3.10.0-1160.59.1.el7.x86_64) | x86_64 | 3.10.0-1160.59.1.el7.x86_64 | [config](<./Red Hat Enterprise Linux Server 7.9 (Maipo)/3.10.0-1160.59.1.el7.x86_64/bootconfig.md>) | [file](<./Red Hat Enterprise Linux Server 7.9 (Maipo)/3.10.0-1160.59.1.el7.x86_64/hostnamectl.md>) | [file](<./Red Hat Enterprise Linux Server 7.9 (Maipo)/3.10.0-1160.59.1.el7.x86_64/os-release.md>) |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0-1127.el7.x86_64 | [config](<./CentOS Linux 7 (Core)/3.10.0-1127.el7.x86_64/bootconfig.md>) | [file](<./CentOS Linux 7 (Core)/3.10.0-1127.el7.x86_64/hostnamectl.md>) | [file](<./CentOS Linux 7 (Core)/3.10.0-1127.el7.x86_64/os-release.md>) |
 </p></details>
@@ -100,6 +101,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Amazon Linux 2](./Amazon%20Linux%202/4.14.252-195.483.amzn2.x86_64) | x86_64 | 4.14.252-195.483.amzn2.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [RancherOS v1.5.8](./RancherOS%20v1.5.8/4.14.138-rancher) | x86 | 4.14.138 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [SUSE Linux Enterprise Server 12 SP5](./SUSE%20Linux%20Enterprise%20Server%2012%20SP5/4.12.14-122.54-default) | x86_64 | 4.12.14 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1160.102.1.el7.x86_64) | x86_64 | 3.10.0-1160.102.1.el7.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Red Hat Enterprise Linux Server 7.9 (Maipo)](./Red%20Hat%20Enterprise%20Linux%20Server%207.9%20(Maipo)/3.10.0-1160.59.1.el7.x86_64) | x86_64 | 3.10.0-1160.59.1.el7.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0-1127.el7.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
@@ -148,6 +150,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Amazon Linux 2](./Amazon%20Linux%202/4.14.252-195.483.amzn2.x86_64) | x86_64 | 4.14.252-195.483.amzn2.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [RancherOS v1.5.8](./RancherOS%20v1.5.8/4.14.138-rancher) | x86 | 4.14.138 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: |
 | [SUSE Linux Enterprise Server 12 SP5](./SUSE%20Linux%20Enterprise%20Server%2012%20SP5/4.12.14-122.54-default) | x86_64 | 4.12.14 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
+| [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1160.102.1.el7.x86_64) | x86_64 | 3.10.0-1160.102.1.el7.x86_64 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :x: |
 | [Red Hat Enterprise Linux Server 7.9 (Maipo)](./Red%20Hat%20Enterprise%20Linux%20Server%207.9%20(Maipo)/3.10.0-1160.59.1.el7.x86_64) | x86_64 | 3.10.0-1160.59.1.el7.x86_64 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :x: |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0-1127.el7.x86_64 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :x: |
 
@@ -196,6 +199,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Amazon Linux 2](./Amazon%20Linux%202/4.14.252-195.483.amzn2.x86_64) | x86_64 | 4.14.252-195.483.amzn2.x86_64 | :x: | :x: | :heavy_check_mark: | :x: | :x: |
 | [RancherOS v1.5.8](./RancherOS%20v1.5.8/4.14.138-rancher) | x86 | 4.14.138 | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |
 | [SUSE Linux Enterprise Server 12 SP5](./SUSE%20Linux%20Enterprise%20Server%2012%20SP5/4.12.14-122.54-default) | x86_64 | 4.12.14 | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |
+| [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1160.102.1.el7.x86_64) | x86_64 | 3.10.0-1160.102.1.el7.x86_64 | :x: | :x: | :heavy_check_mark: | :x: | :x: |
 | [Red Hat Enterprise Linux Server 7.9 (Maipo)](./Red%20Hat%20Enterprise%20Linux%20Server%207.9%20(Maipo)/3.10.0-1160.59.1.el7.x86_64) | x86_64 | 3.10.0-1160.59.1.el7.x86_64 | :x: | :x: | :heavy_check_mark: | :x: | :x: |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0-1127.el7.x86_64 | :x: | :x: | :heavy_check_mark: | :x: | :x: |
 
@@ -246,6 +250,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Amazon Linux 2](./Amazon%20Linux%202/4.14.252-195.483.amzn2.x86_64) | x86_64 | 4.14.252-195.483.amzn2.x86_64 | :heavy_check_mark: | :heavy_check_mark: |
 | [RancherOS v1.5.8](./RancherOS%20v1.5.8/4.14.138-rancher) | x86 | 4.14.138 | :heavy_check_mark: | :heavy_check_mark: |
 | [SUSE Linux Enterprise Server 12 SP5](./SUSE%20Linux%20Enterprise%20Server%2012%20SP5/4.12.14-122.54-default) | x86_64 | 4.12.14 | :heavy_check_mark: | :heavy_check_mark: |
+| [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1160.102.1.el7.x86_64) | x86_64 | 3.10.0-1160.102.1.el7.x86_64 | :heavy_check_mark: | :heavy_check_mark: |
 | [Red Hat Enterprise Linux Server 7.9 (Maipo)](./Red%20Hat%20Enterprise%20Linux%20Server%207.9%20(Maipo)/3.10.0-1160.59.1.el7.x86_64) | x86_64 | 3.10.0-1160.59.1.el7.x86_64 | :heavy_check_mark: | :heavy_check_mark: |
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0-1127.el7.x86_64 | :heavy_check_mark: | :heavy_check_mark: |
 </p></details>
