@@ -1,0 +1,22 @@
+# /etc/os-release
+```
+NAME="Red Hat Enterprise Linux CoreOS"
+ID="rhcos"
+ID_LIKE="rhel fedora"
+VERSION="412.86.202402272018-0"
+VERSION_ID="4.12"
+PLATFORM_ID="platform:el8"
+PRETTY_NAME="Red Hat Enterprise Linux CoreOS 412.86.202402272018-0 (Ootpa)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:redhat:enterprise_linux:8::coreos"
+HOME_URL="https://www.redhat.com/"
+DOCUMENTATION_URL="https://docs.openshift.com/container-platform/4.12/"
+BUG_REPORT_URL="https://access.redhat.com/labs/rhir/"
+REDHAT_BUGZILLA_PRODUCT="OpenShift Container Platform"
+REDHAT_BUGZILLA_PRODUCT_VERSION="4.12"
+REDHAT_SUPPORT_PRODUCT="OpenShift Container Platform"
+REDHAT_SUPPORT_PRODUCT_VERSION="4.12"
+OPENSHIFT_VERSION="4.12"
+RHEL_VERSION="8.6"
+OSTREE_VERSION="412.86.202402272018-0"
+```
