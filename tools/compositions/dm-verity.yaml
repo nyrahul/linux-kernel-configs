@@ -1,0 +1,8 @@
+title: "DM Verity Support"
+compositions:
+  - name: "DM-Verity"
+    desc: "DM-Verity"
+    configs: ["CONFIG_DM_VERITY=[ym]"]
+  - name: "DM-Verity FEC"
+    desc: "DM Verity Forward Error Correction"
+    configs: ["CONFIG_DM_VERITY_FEC=[ym]"]
