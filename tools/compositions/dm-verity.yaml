@@ -6,3 +6,6 @@ compositions:
   - name: "DM-Verity FEC"
     desc: "DM Verity Forward Error Correction"
     configs: ["CONFIG_DM_VERITY_FEC=[ym]"]
+  - name: "FS-Verity"
+    desc: "FS-Verity"
+    configs: ["CONFIG_FS_VERITY=[ym]"]
