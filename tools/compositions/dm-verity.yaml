@@ -1,4 +1,4 @@
-title: "DM Verity Support"
+title: "Verity Support"
 compositions:
   - name: "DM-Verity"
     desc: "DM-Verity"
@@ -9,3 +9,6 @@ compositions:
   - name: "FS-Verity"
     desc: "FS-Verity"
     configs: ["CONFIG_FS_VERITY=[ym]"]
+  - name: "FS-Verity Signatures"
+    desc: "FS-Verity Builtin Signatures"
+    configs: ["CONFIG_FS_VERITY_BUILTIN_SIGNATURES=[ym]"]
