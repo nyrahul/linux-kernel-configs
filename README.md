@@ -13,6 +13,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | Kernel Config | hostnamectl | os-release |
 |:------:|:----:|:------:|:-------------:|:-----------:|:----------:|
+| [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | [config](<./Ubuntu 24.04 LTS/6.8.0-38-generic/bootconfig.md>) | [file](<./Ubuntu 24.04 LTS/6.8.0-38-generic/hostnamectl.md>) | [file](<./Ubuntu 24.04 LTS/6.8.0-38-generic/os-release.md>) |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | [config](<./Fedora Linux 39 (Server Edition)/6.7.7-200.fc39.aarch64/bootconfig.md>) | [file](<./Fedora Linux 39 (Server Edition)/6.7.7-200.fc39.aarch64/hostnamectl.md>) | [file](<./Fedora Linux 39 (Server Edition)/6.7.7-200.fc39.aarch64/os-release.md>) |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | [config](<./Ubuntu 22.04.4 LTS/6.5.0-1014-gcp/bootconfig.md>) | [file](<./Ubuntu 22.04.4 LTS/6.5.0-1014-gcp/hostnamectl.md>) | [file](<./Ubuntu 22.04.4 LTS/6.5.0-1014-gcp/os-release.md>) |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | [config](<./Debian GNU_Linux trixie/6.5.0-1-powerpc64le/bootconfig.md>) | [file](<./Debian GNU_Linux trixie/6.5.0-1-powerpc64le/hostnamectl.md>) | [file](<./Debian GNU_Linux trixie/6.5.0-1-powerpc64le/os-release.md>) |
@@ -73,6 +74,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | [CONFIG_AUDIT](https://cateee.net/lkddb/web-lkddb/AUDIT.html) | [CONFIG_AUDIT_ARCH](https://cateee.net/lkddb/web-lkddb/AUDIT_ARCH.html) | [CONFIG_AUDITSYSCALL](https://cateee.net/lkddb/web-lkddb/AUDITSYSCALL.html) |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | :heavy_check_mark: | :x: | :heavy_check_mark: |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -133,6 +135,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | CONFIG_BPF | [CGROUP_BPF](https://cateee.net/lkddb/web-lkddb/CGROUP_BPF.html) | [BPF_SYSCALL](https://cateee.net/lkddb/web-lkddb/BPF_SYSCALL.html) | [BPF_JIT](https://cateee.net/lkddb/web-lkddb/BPF_JIT.html) | [BPF_LSM](https://cateee.net/lkddb/web-lkddb/BPF_LSM.html) | [BPF_KPROBE_OVERRIDE](https://cateee.net/lkddb/web-lkddb/BPF_KPROBE_OVERRIDE.html) | [BPFILTER](https://cateee.net/lkddb/web-lkddb/BPFILTER.html) | [NET_ACT_BPF](https://cateee.net/lkddb/web-lkddb/NET_ACT_BPF.html) | [NET_CLS_BPF](https://cateee.net/lkddb/web-lkddb/NET_CLS_BPF.html) | [BPF_EVENTS](https://cateee.net/lkddb/web-lkddb/BPF_EVENTS.html) | [LWTUNNEL_BPF](https://cateee.net/lkddb/web-lkddb/LWTUNNEL_BPF.html) | [BPF_STREAM_PARSER](https://cateee.net/lkddb/web-lkddb/BPF_STREAM_PARSER.html) | [NETFILTER_XT_MATCH_BPF](https://cateee.net/lkddb/web-lkddb/NETFILTER_XT_MATCH_BPF.html) | [IPV6_SEG6_BPF](https://cateee.net/lkddb/web-lkddb/IPV6_SEG6_BPF.html) |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -193,6 +196,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | DM-Verity | DM-Verity FEC | FS-Verity | FS-Verity Signatures |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -251,6 +255,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | BPF LSM | [AppArmor](https://apparmor.net/) | [SELinux](http://selinuxproject.org/) | [LandLock](https://landlock.io/) | [SMACK](https://www.kernel.org/doc/html/v4.18/admin-guide/LSM/Smack.html) |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
@@ -313,6 +318,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | Seccomp | Seccomp Filter |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | :heavy_check_mark: | :heavy_check_mark: |
