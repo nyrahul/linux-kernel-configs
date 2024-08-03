@@ -1,0 +1,19 @@
+title: "Networking XFRM Support"
+compositions:
+  - name: "CONFIG_XFRM"
+    desc: "xfrm  is  an  IP  framework  for  transforming  packets."
+    configs: ["CONFIG_XFRM=[ym]"]
+  - name: "CONFIG_XFRM_OFFLOAD"
+    configs: ["CONFIG_XFRM_OFFLOAD=[ym]"]
+  - name: "CONFIG_XFRM_ALGO"
+    configs: ["CONFIG_XFRM_ALGO=[ym]"]
+  - name: "CONFIG_XFRM_USER"
+    configs: ["CONFIG_XFRM_USER=[ym]"]
+  - name: "CONFIG_XFRM_SUB_POLICY"
+    configs: ["CONFIG_XFRM_SUB_POLICY=[ym]"]
+  - name: "CONFIG_XFRM_MIGRATE"
+    configs: ["CONFIG_XFRM_MIGRATE=[ym]"]
+  - name: "CONFIG_XFRM_IPCOMP"
+    configs: ["CONFIG_XFRM_IPCOMP=[ym]"]
+  - name: "CONFIG_SECURITY_NETWORK_XFRM"
+    configs: ["CONFIG_SECURITY_NETWORK_XFRM=[ym]"]
