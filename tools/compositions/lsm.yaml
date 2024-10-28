@@ -6,6 +6,9 @@ compositions:
   - name: "BPF LSM"
     desc: "BPF_LSM"
     configs: ["CONFIG_BPF=[ym]", "CONFIG_BPF_LSM=[ym]"]
+  - name: "Integrity/IMA"
+    desc: "Integrity Measurement Arch"
+    configs: ["CONFIG_IMA=[ym]", "CONFIG_INTEGRITY=[ym]"]
   - name: "[AppArmor](https://apparmor.net/)"
     desc: "AppArmor"
     configs: ["CONFIG_SECURITY_APPARMOR=[ym]"]
