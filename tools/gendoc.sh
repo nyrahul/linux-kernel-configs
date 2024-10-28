@@ -109,7 +109,7 @@ getDistro()
 
 getArchKrnVer()
 {
-	STR=`grep "^# Linux.*Kernel Configuration" $TMP_BOOTCFG | head -1 | awk '{print $2,$3}'`
+	STR=`grep "^#.* Linux.*Kernel Configuration" $TMP_BOOTCFG | head -1 | awk '{print $2,$3}'`
 	ARCH=${STR/ */}
 	ARCH=${ARCH/*\//}
 	KRNVER=${STR/* /}
