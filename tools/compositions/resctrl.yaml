@@ -7,9 +7,9 @@ compositions:
     configs: ["CONFIG_X86_CPU_RESCTRL=[ym]"]
   - name: "CONFIG_X86_RESCTRL"
     configs: ["CONFIG_X86_RESCTRL=[ym]"]
-  - name: "[CONFIG_RESCTRL](https://github.com/torvalds/linux/commit/90802938f7e88045ace123e105e22e8c3e7f9c7e#diff-30397f61d1661eb57fd49221ec6a29cb96afdbd0d8084558aabd464530de0283L12)]"
+  - name: "[CONFIG_RESCTRL](https://github.com/torvalds/linux/commit/90802938f7e88045ace123e105e22e8c3e7f9c7e#diff-30397f61d1661eb57fd49221ec6a29cb96afdbd0d8084558aabd464530de0283L12)"
     configs: ["CONFIG_RESCTRL=[ym]"]
-  - name: "[CONFIG_INTEL_RDT](https://github.com/torvalds/linux/commit/a6f771c9bf4eea2da1516e70c283ede61a7d666f#diff-30397f61d1661eb57fd49221ec6a29cb96afdbd0d8084558aabd464530de0283L9)]"
+  - name: "[CONFIG_INTEL_RDT](https://github.com/torvalds/linux/commit/a6f771c9bf4eea2da1516e70c283ede61a7d666f#diff-30397f61d1661eb57fd49221ec6a29cb96afdbd0d8084558aabd464530de0283L9)"
     configs: ["CONFIG_INTEL_RDT=[ym]"]
-  - name: "[CONFIG_INTEL_RDT_A](https://github.com/torvalds/linux/commit/1640ae9471ae41eb18d2b214f1f40af3c4ed3828#diff-721a170a1097365c094c385ffcb09225384ba983423b0a0197ee35e7fe28ea37L9)]"
+  - name: "[CONFIG_INTEL_RDT_A](https://github.com/torvalds/linux/commit/1640ae9471ae41eb18d2b214f1f40af3c4ed3828#diff-721a170a1097365c094c385ffcb09225384ba983423b0a0197ee35e7fe28ea37L9)"
     configs: ["CONFIG_INTEL_RDT_A=[ym]"]
