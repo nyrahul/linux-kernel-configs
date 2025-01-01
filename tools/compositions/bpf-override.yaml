@@ -1,0 +1,8 @@
+title: "bpf_override_return() Support"
+notes:
+  - note: "See [bpf-helpers docs](https://man7.org/linux/man-pages/man7/bpf-helpers.7.html) for more details."
+compositions:
+  - name: "ALLOW_ERROR_INJECTION"
+    configs: ["ALLOW_ERROR_INJECTION=[ym]"]
+  - name: "CONFIG_BPF_KPROBE_OVERRIDE"
+    configs: ["CONFIG_BPF_KPROBE_OVERRIDE=[ym]"]

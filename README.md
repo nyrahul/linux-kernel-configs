@@ -137,6 +137,70 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 > This table lists kernel audit support. There is a userspace auditd daemon that is a separate accessory tooling leveraging kernel audit support. This table has nothing to do with userspace components.
 </p></details>
+<details><summary><h3>bpf_override_return() Support</h3></summary><p>
+
+| Distro | Arch | Kernel | ALLOW_ERROR_INJECTION | CONFIG_BPF_KPROBE_OVERRIDE |
+|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | :x: | :heavy_check_mark: |
+| [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | :x: | :x: |
+| [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | :x: | :heavy_check_mark: |
+| [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | :x: | :x: |
+| [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1-arch1 | :x: | :heavy_check_mark: |
+| [Flatcar Container Linux by Kinvolk 3815.2.5 (Oklo)](./Flatcar%20Container%20Linux%20by%20Kinvolk%203815.2.5%20(Oklo)/6.1.96-flatcar) | x86 | 6.1.96-flatcar | :x: | :x: |
+| [Container-Optimized OS from Google](./Container-Optimized%20OS%20from%20Google/6.1.85+) | x86_64 | 6.1.85 | :x: | :x: |
+| [Amazon Linux 2023](./Amazon%20Linux%202023/6.1.19-30.43.amzn2023.x86_64) | x86_64 | 6.1.19-30.43.amzn2023.x86_64 | :x: | :heavy_check_mark: |
+| [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/6.1.10-11.ph5) | x86_64 | 6.1.10 | :x: | :x: |
+| [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-arm64) | arm64 | 6.1.76 | :x: | :x: |
+| [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-amd64) | x86 | 6.1.76 | :x: | :x: |
+| [CBL-Mariner/Linux](./CBL-Mariner_Linux/5.15.138.1-4.cm2) | x86_64 | 5.15.138.1 | :x: | :x: |
+| [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86-53.137.amzn2.x86_64 | :x: | :heavy_check_mark: |
+| [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :x: | :x: |
+| [Pop!_OS 21.10](./Pop!_OS%2021.10/5.15.5-76051505-generic) | x86 | 5.15.5-76051505-generic | :x: | :heavy_check_mark: |
+| [Ubuntu 22.04.3 LTS](./Ubuntu%2022.04.3%20LTS/5.15.0-1051-azure) | x86 | 5.15.0-1051-azure | :x: | :heavy_check_mark: |
+| [Oracle Linux Server 8.8](./Oracle%20Linux%20Server%208.8/5.15.0-103.114.4.el8uek.x86_64) | x86_64 | 5.15.0-103.114.4.el8uek.x86_64 | :x: | :heavy_check_mark: |
+| [Oracle Linux Server 8.7](./Oracle%20Linux%20Server%208.7/5.15.0-6.80.3.1.el8uek.x86_64) | x86_64 | 5.15.0-6.80.3.1.el8uek.x86_64 | :x: | :heavy_check_mark: |
+| [AlmaLinux 9.3 (Shamrock Pampas Cat)](./AlmaLinux%209.3%20(Shamrock%20Pampas%20Cat)/5.14.0-362.18.1.el9_3.x86_64) | x86_64 | 5.14.0-362.18.1.el9_3.x86_64 | :x: | :x: |
+| [AlmaLinux 9.3 (Shamrock Pampas Cat)](./AlmaLinux%209.3%20(Shamrock%20Pampas%20Cat)/5.14.0-362.8.1.el9_3.x86_64) | x86_64 | 5.14.0-362.8.1.el9_3.x86_64 | :x: | :x: |
+| [Red Hat Enterprise Linux 9.2 (Plow)](./Red%20Hat%20Enterprise%20Linux%209.2%20(Plow)/5.14.0-284.11.1.el9_2.x86_64) | x86_64 | 5.14.0-284.11.1.el9_2.x86_64 | :x: | :x: |
+| [Rocky Linux 9.0 (Blue Onyx)](./Rocky%20Linux%209.0%20(Blue%20Onyx)/5.14.0-70.13.1.el9_0.x86_64) | x86_64 | 5.14.0-70.13.1.el9_0.x86_64 | :x: | :x: |
+| [Pop!_OS 21.04](./Pop!_OS%2021.04/5.11.0-7633-generic) | x86 | 5.11.0-7633-generic | :x: | :heavy_check_mark: |
+| [Ubuntu 20.04.3 LTS](./Ubuntu%2020.04.3%20LTS/5.11.0-1026-gcp) | x86 | 5.11.0-1026-gcp | :x: | :heavy_check_mark: |
+| [Ubuntu 20.04.3 LTS](./Ubuntu%2020.04.3%20LTS/5.11.0-1022-aws) | x86_64 | 5.11.0-1022-aws | :x: | :heavy_check_mark: |
+| [Alibaba Cloud Linux 3 (Soaring Falcon)](./Alibaba%20Cloud%20Linux%203%20(Soaring%20Falcon)/5.10.134-16.1.al8.x86_64) | x86 | 5.10.134-16.1.al8.x86_64 | :x: | :x: |
+| [Container-Optimized OS from Google](./Container-Optimized%20OS%20from%20Google/5.10.90+) | x86_64 | 5.10.90 | :x: | :x: |
+| [Flatcar Container Linux by Kinvolk 3033.2.0 (Oklo)](./Flatcar%20Container%20Linux%20by%20Kinvolk%203033.2.0%20(Oklo)/5.10.84-flatcar) | x86 | 5.10.84-flatcar | :x: | :x: |
+| [Amazon Linux 2022](./Amazon%20Linux%202022/5.10.75-82.359.amzn2022.x86_64) | x86_64 | 5.10.75-82.359.amzn2022.x86_64 | :x: | :heavy_check_mark: |
+| [Amazon Linux 2](./Amazon%20Linux%202/5.10.75-79.358.amzn2.x86_64) | x86_64 | 5.10.75-79.358.amzn2.x86_64 | :x: | :heavy_check_mark: |
+| [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/5.10.61-1.ph4) | x86_64 | 5.10.61 | :x: | :x: |
+| [Raspbian GNU/Linux 10 (buster)](./Raspbian%20GNU_Linux%2010%20(buster)/5.10.17-v7l+) | arm | 5.10.17 | :x: | :x: |
+| [Debian GNU/Linux 11 (bullseye)](./Debian%20GNU_Linux%2011%20(bullseye)/5.10.0-28-cloud-amd64) | x86 | 5.10.209 | :x: | :x: |
+| [Amazon Linux 2](./Amazon%20Linux%202/5.4.226-129.415.amzn2.x86_64) | x86_64 | 5.4.226-129.415.amzn2.x86_64 | :x: | :heavy_check_mark: |
+| [Container-Optimized OS from Google](./Container-Optimized%20OS%20from%20Google/5.4.144+) | x86_64 | 5.4.144 | :x: | :x: |
+| [Ubuntu 18.04.6 LTS](./Ubuntu%2018.04.6%20LTS/5.4.0-1060-aws) | x86_64 | 5.4.0-1060-aws | :x: | :heavy_check_mark: |
+| [k3OS v0.21.5-k3s2r1](./k3OS%20v0.21.5-k3s2r1/5.4.0-88-generic) | x86 | 5.4.0-88-generic | :x: | :heavy_check_mark: |
+| [SUSE Linux Enterprise Server 15 SP3](./SUSE%20Linux%20Enterprise%20Server%2015%20SP3/5.3.18-59.24-default) | x86 | 5.3.18 | :x: | :x: |
+| [Alibaba Cloud Linux (Aliyun Linux) 2.1903 LTS (Hunting Beagle)](./Alibaba%20Cloud%20Linux%20(Aliyun%20Linux)%202.1903%20LTS%20(Hunting%20Beagle)/4.19.91-27.7.al7.x86_64) | x86 | 4.19.91-27.7.al7.x86_64 | :x: | :heavy_check_mark: |
+| [Debian GNU/Linux 10 (buster)](./Debian%20GNU_Linux%2010%20(buster)/4.19.0-26-cloud-amd64) | x86 | 4.19.304 | :x: | :x: |
+| [Debian GNU/Linux 10 (buster)](./Debian%20GNU_Linux%2010%20(buster)/4.19.0-16-cloud-amd64) | x86 | 4.19.181 | :x: | :x: |
+| [Rocky Linux 8.7 (Green Obsidian)](./Rocky%20Linux%208.7%20(Green%20Obsidian)/4.18.0-425.10.1.el8_7.x86_64) | x86_64 | 4.18.0-425.10.1.el8_7.x86_64 | :x: | :heavy_check_mark: |
+| [Red Hat Enterprise Linux CoreOS 412.86.202402272018-0 (Ootpa)](./Red%20Hat%20Enterprise%20Linux%20CoreOS%20412.86.202402272018-0%20(Ootpa)/4.18.0-372.93.1.el8_6.x86_64) | x86_64 | 4.18.0-372.93.1.el8_6.x86_64 | :x: | :heavy_check_mark: |
+| [Oracle Linux Server 8.6](./Oracle%20Linux%20Server%208.6/4.18.0-372.9.1.el8.x86_64) | x86_64 | 4.18.0-372.9.1.el8.x86_64 | :x: | :heavy_check_mark: |
+| [Red Hat Enterprise Linux 8.5 (Ootpa)](./Red%20Hat%20Enterprise%20Linux%208.5%20(Ootpa)/4.18.0-348.el8.x86_64) | x86_64 | 4.18.0-348.el8.x86_64 | :x: | :heavy_check_mark: |
+| [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-348.7.1.el8_5.x86_64) | x86_64 | 4.18.0-348.7.1.el8_5.x86_64 | :x: | :heavy_check_mark: |
+| [Red Hat Enterprise Linux 8.4 (Ootpa)](./Red%20Hat%20Enterprise%20Linux%208.4%20(Ootpa)/4.18.0-305.el8.x86_64) | x86_64 | 4.18.0-305.el8.x86_64 | :x: | :x: |
+| [CentOS Linux 8](./CentOS%20Linux%208/4.18.0-240.1.1.el8_3.x86_64) | x86_64 | 4.18.0-240.1.1.el8_3.x86_64 | :x: | :x: |
+| [Red Hat Enterprise Linux 8.1 (Ootpa)](./Red%20Hat%20Enterprise%20Linux%208.1%20(Ootpa)/4.18.0-147.57.1.el8_1.x86_64) | x86_64 | 4.18.0-147.57.1.el8_1.x86_64 | :x: | :x: |
+| [Ubuntu 18.04.6 LTS](./Ubuntu%2018.04.6%20LTS/4.15.0-163-generic) | x86 | 4.15.0-163-generic | :x: | :x: |
+| [Ubuntu 16.04.7 LTS](./Ubuntu%2016.04.7%20LTS/4.15.0-142-generic) | x86 | 4.15.0-142-generic | :x: | :x: |
+| [Amazon Linux 2](./Amazon%20Linux%202/4.14.252-195.483.amzn2.x86_64) | x86_64 | 4.14.252-195.483.amzn2.x86_64 | :x: | :x: |
+| [RancherOS v1.5.8](./RancherOS%20v1.5.8/4.14.138-rancher) | x86 | 4.14.138 | :x: | :x: |
+| [SUSE Linux Enterprise Server 12 SP5](./SUSE%20Linux%20Enterprise%20Server%2012%20SP5/4.12.14-122.54-default) | x86_64 | 4.12.14 | :x: | :x: |
+| [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1160.102.1.el7.x86_64) | x86_64 | 3.10.0-1160.102.1.el7.x86_64 | :x: | :heavy_check_mark: |
+| [Red Hat Enterprise Linux Server 7.9 (Maipo)](./Red%20Hat%20Enterprise%20Linux%20Server%207.9%20(Maipo)/3.10.0-1160.59.1.el7.x86_64) | x86_64 | 3.10.0-1160.59.1.el7.x86_64 | :x: | :heavy_check_mark: |
+| [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0-1127.el7.x86_64 | :x: | :heavy_check_mark: |
+
+> See [bpf-helpers docs](https://man7.org/linux/man-pages/man7/bpf-helpers.7.html) for more details.
+</p></details>
 <details><summary><h3>BPF/eBPF Support</h3></summary><p>
 
 | Distro | Arch | Kernel | CONFIG_BPF | [CGROUP_BPF](https://cateee.net/lkddb/web-lkddb/CGROUP_BPF.html) | [BPF_SYSCALL](https://cateee.net/lkddb/web-lkddb/BPF_SYSCALL.html) | [BPF_JIT](https://cateee.net/lkddb/web-lkddb/BPF_JIT.html) | [BPF_LSM](https://cateee.net/lkddb/web-lkddb/BPF_LSM.html) | [BPF_KPROBE_OVERRIDE](https://cateee.net/lkddb/web-lkddb/BPF_KPROBE_OVERRIDE.html) | [BPFILTER](https://cateee.net/lkddb/web-lkddb/BPFILTER.html) | [NET_ACT_BPF](https://cateee.net/lkddb/web-lkddb/NET_ACT_BPF.html) | [NET_CLS_BPF](https://cateee.net/lkddb/web-lkddb/NET_CLS_BPF.html) | [BPF_EVENTS](https://cateee.net/lkddb/web-lkddb/BPF_EVENTS.html) | [LWTUNNEL_BPF](https://cateee.net/lkddb/web-lkddb/LWTUNNEL_BPF.html) | [BPF_STREAM_PARSER](https://cateee.net/lkddb/web-lkddb/BPF_STREAM_PARSER.html) | [NETFILTER_XT_MATCH_BPF](https://cateee.net/lkddb/web-lkddb/NETFILTER_XT_MATCH_BPF.html) | [IPV6_SEG6_BPF](https://cateee.net/lkddb/web-lkddb/IPV6_SEG6_BPF.html) |
