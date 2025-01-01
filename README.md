@@ -200,6 +200,8 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [CentOS Linux 7 (Core)](./CentOS%20Linux%207%20(Core)/3.10.0-1127.el7.x86_64) | x86_64 | 3.10.0-1127.el7.x86_64 | :x: | :heavy_check_mark: |
 
 > See [bpf-helpers docs](https://man7.org/linux/man-pages/man7/bpf-helpers.7.html) for more details.
+
+> Both CONFIG_FUNCTION_ERROR_INJECTION and CONFIG_BPF_KPROBE_OVERRIDE needs to be enabled for the bpf_override_return() to work. Moreover, the system call should be [listed explicitly for error-injection](https://github.com/iovisor/bcc/issues/2485#issuecomment-1179965134).
 </p></details>
 <details><summary><h3>BPF/eBPF Support</h3></summary><p>
 
