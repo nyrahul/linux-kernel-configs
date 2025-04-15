@@ -13,6 +13,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | Kernel Config | hostnamectl | os-release |
 |:------:|:----:|:------:|:-------------:|:-----------:|:----------:|
+| [Deepin 23.1](./Deepin%2023.1/6.12.20-amd64-desktop-rolling) | x86 | 6.12.20 | [config](<./Deepin 23.1/6.12.20-amd64-desktop-rolling/bootconfig.md>) | [file](<./Deepin 23.1/6.12.20-amd64-desktop-rolling/hostnamectl.md>) | [file](<./Deepin 23.1/6.12.20-amd64-desktop-rolling/os-release.md>) |
 | [Talos Linux v1.9.1](./talos-linux-v1.9.1/6.12.6-talos) | x86 | 6.12.6 | [config](<./talos-linux-v1.9.1/6.12.6-talos/bootconfig.md>) | NotAvailable | [file](<./talos-linux-v1.9.1/6.12.6-talos/os-release.md>) |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.8.12-4-pve) | x86 | 6.8.12-4-pve | [config](<./Debian GNU_Linux 12 (bookworm)/6.8.12-4-pve/bootconfig.md>) | [file](<./Debian GNU_Linux 12 (bookworm)/6.8.12-4-pve/hostnamectl.md>) | [file](<./Debian GNU_Linux 12 (bookworm)/6.8.12-4-pve/os-release.md>) |
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | [config](<./Ubuntu 24.04.1 LTS/6.8.0-52-generic/bootconfig.md>) | [file](<./Ubuntu 24.04.1 LTS/6.8.0-52-generic/hostnamectl.md>) | [file](<./Ubuntu 24.04.1 LTS/6.8.0-52-generic/os-release.md>) |
@@ -81,6 +82,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | [CONFIG_AUDIT](https://cateee.net/lkddb/web-lkddb/AUDIT.html) | [CONFIG_AUDIT_ARCH](https://cateee.net/lkddb/web-lkddb/AUDIT_ARCH.html) | [CONFIG_AUDITSYSCALL](https://cateee.net/lkddb/web-lkddb/AUDITSYSCALL.html) |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Deepin 23.1](./Deepin%2023.1/6.12.20-amd64-desktop-rolling) | x86 | 6.12.20 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Talos Linux v1.9.1](./talos-linux-v1.9.1/6.12.6-talos) | x86 | 6.12.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.8.12-4-pve) | x86 | 6.8.12-4-pve | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -149,6 +151,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | CONFIG_FUNCTION_ERROR_INJECTION | CONFIG_BPF_KPROBE_OVERRIDE |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Deepin 23.1](./Deepin%2023.1/6.12.20-amd64-desktop-rolling) | x86 | 6.12.20 | :x: | :x: |
 | [Talos Linux v1.9.1](./talos-linux-v1.9.1/6.12.6-talos) | x86 | 6.12.6 | :heavy_check_mark: | :x: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.8.12-4-pve) | x86 | 6.8.12-4-pve | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :heavy_check_mark: |
@@ -219,6 +222,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | CONFIG_BPF | [CGROUP_BPF](https://cateee.net/lkddb/web-lkddb/CGROUP_BPF.html) | [BPF_SYSCALL](https://cateee.net/lkddb/web-lkddb/BPF_SYSCALL.html) | [BPF_JIT](https://cateee.net/lkddb/web-lkddb/BPF_JIT.html) | [BPF_LSM](https://cateee.net/lkddb/web-lkddb/BPF_LSM.html) | [BPF_KPROBE_OVERRIDE](https://cateee.net/lkddb/web-lkddb/BPF_KPROBE_OVERRIDE.html) | [BPFILTER](https://cateee.net/lkddb/web-lkddb/BPFILTER.html) | [NET_ACT_BPF](https://cateee.net/lkddb/web-lkddb/NET_ACT_BPF.html) | [NET_CLS_BPF](https://cateee.net/lkddb/web-lkddb/NET_CLS_BPF.html) | [BPF_EVENTS](https://cateee.net/lkddb/web-lkddb/BPF_EVENTS.html) | [LWTUNNEL_BPF](https://cateee.net/lkddb/web-lkddb/LWTUNNEL_BPF.html) | [BPF_STREAM_PARSER](https://cateee.net/lkddb/web-lkddb/BPF_STREAM_PARSER.html) | [NETFILTER_XT_MATCH_BPF](https://cateee.net/lkddb/web-lkddb/NETFILTER_XT_MATCH_BPF.html) | [IPV6_SEG6_BPF](https://cateee.net/lkddb/web-lkddb/IPV6_SEG6_BPF.html) |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Deepin 23.1](./Deepin%2023.1/6.12.20-amd64-desktop-rolling) | x86 | 6.12.20 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Talos Linux v1.9.1](./talos-linux-v1.9.1/6.12.6-talos) | x86 | 6.12.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.8.12-4-pve) | x86 | 6.8.12-4-pve | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -287,6 +291,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | DM-Verity | DM-Verity FEC | FS-Verity | FS-Verity Signatures |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Deepin 23.1](./Deepin%2023.1/6.12.20-amd64-desktop-rolling) | x86 | 6.12.20 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Talos Linux v1.9.1](./talos-linux-v1.9.1/6.12.6-talos) | x86 | 6.12.6 | :x: | :x: | :x: | :x: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.8.12-4-pve) | x86 | 6.8.12-4-pve | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
@@ -353,6 +358,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | BPF LSM | Integrity/IMA | [AppArmor](https://apparmor.net/) | [SELinux](http://selinuxproject.org/) | [LandLock](https://landlock.io/) | [SMACK](https://www.kernel.org/doc/html/v4.18/admin-guide/LSM/Smack.html) |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Deepin 23.1](./Deepin%2023.1/6.12.20-amd64-desktop-rolling) | x86 | 6.12.20 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |
 | [Talos Linux v1.9.1](./talos-linux-v1.9.1/6.12.6-talos) | x86 | 6.12.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.8.12-4-pve) | x86 | 6.8.12-4-pve | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -423,6 +429,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | CONFIG_X86_CPU_RESCTRL (since v5.0) | CONFIG_X86_RESCTRL | [CONFIG_RESCTRL](https://github.com/torvalds/linux/commit/90802938f7e88045ace123e105e22e8c3e7f9c7e#diff-30397f61d1661eb57fd49221ec6a29cb96afdbd0d8084558aabd464530de0283L12) | [CONFIG_INTEL_RDT](https://github.com/torvalds/linux/commit/a6f771c9bf4eea2da1516e70c283ede61a7d666f#diff-30397f61d1661eb57fd49221ec6a29cb96afdbd0d8084558aabd464530de0283L9) | [CONFIG_INTEL_RDT_A](https://github.com/torvalds/linux/commit/1640ae9471ae41eb18d2b214f1f40af3c4ed3828#diff-721a170a1097365c094c385ffcb09225384ba983423b0a0197ee35e7fe28ea37L9) |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Deepin 23.1](./Deepin%2023.1/6.12.20-amd64-desktop-rolling) | x86 | 6.12.20 | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | [Talos Linux v1.9.1](./talos-linux-v1.9.1/6.12.6-talos) | x86 | 6.12.6 | :x: | :x: | :x: | :x: | :x: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.8.12-4-pve) | x86 | 6.8.12-4-pve | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :x: | :x: | :x: | :x: |
@@ -493,6 +500,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | Seccomp | Seccomp Filter |
 |:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Deepin 23.1](./Deepin%2023.1/6.12.20-amd64-desktop-rolling) | x86 | 6.12.20 | :heavy_check_mark: | :heavy_check_mark: |
 | [Talos Linux v1.9.1](./talos-linux-v1.9.1/6.12.6-talos) | x86 | 6.12.6 | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.8.12-4-pve) | x86 | 6.8.12-4-pve | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :heavy_check_mark: |
@@ -559,6 +567,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 | Distro | Arch | Kernel | CONFIG_XFRM | CONFIG_XFRM_OFFLOAD | CONFIG_XFRM_ALGO | CONFIG_XFRM_USER | CONFIG_XFRM_SUB_POLICY | CONFIG_XFRM_MIGRATE | CONFIG_XFRM_IPCOMP | CONFIG_SECURITY_NETWORK_XFRM |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| [Deepin 23.1](./Deepin%2023.1/6.12.20-amd64-desktop-rolling) | x86 | 6.12.20 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Talos Linux v1.9.1](./talos-linux-v1.9.1/6.12.6-talos) | x86 | 6.12.6 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.8.12-4-pve) | x86 | 6.8.12-4-pve | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
