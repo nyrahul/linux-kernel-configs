@@ -19,6 +19,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | [config](<./Ubuntu 24.04.1 LTS/6.8.0-52-generic/bootconfig.md>) | [file](<./Ubuntu 24.04.1 LTS/6.8.0-52-generic/hostnamectl.md>) | [file](<./Ubuntu 24.04.1 LTS/6.8.0-52-generic/os-release.md>) |
 | [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | [config](<./Ubuntu 24.04 LTS/6.8.0-38-generic/bootconfig.md>) | [file](<./Ubuntu 24.04 LTS/6.8.0-38-generic/hostnamectl.md>) | [file](<./Ubuntu 24.04 LTS/6.8.0-38-generic/os-release.md>) |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | [config](<./Fedora Linux 39 (Server Edition)/6.7.7-200.fc39.aarch64/bootconfig.md>) | [file](<./Fedora Linux 39 (Server Edition)/6.7.7-200.fc39.aarch64/hostnamectl.md>) | [file](<./Fedora Linux 39 (Server Edition)/6.7.7-200.fc39.aarch64/os-release.md>) |
+| [Deepin 23.1](./Deepin%2023.1/6.6.84-amd64-desktop-hwe) | x86 | 6.6.84 | [config](<./Deepin 23.1/6.6.84-amd64-desktop-hwe/bootconfig.md>) | [file](<./Deepin 23.1/6.6.84-amd64-desktop-hwe/hostnamectl.md>) | [file](<./Deepin 23.1/6.6.84-amd64-desktop-hwe/os-release.md>) |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | [config](<./Ubuntu 22.04.4 LTS/6.5.0-1014-gcp/bootconfig.md>) | [file](<./Ubuntu 22.04.4 LTS/6.5.0-1014-gcp/hostnamectl.md>) | [file](<./Ubuntu 22.04.4 LTS/6.5.0-1014-gcp/os-release.md>) |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | [config](<./Debian GNU_Linux trixie/6.5.0-1-powerpc64le/bootconfig.md>) | [file](<./Debian GNU_Linux trixie/6.5.0-1-powerpc64le/hostnamectl.md>) | [file](<./Debian GNU_Linux trixie/6.5.0-1-powerpc64le/os-release.md>) |
 | [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1-arch1 | [config](<./Arch Linux/6.2.1-arch1-1/bootconfig.md>) | [file](<./Arch Linux/6.2.1-arch1-1/hostnamectl.md>) | [file](<./Arch Linux/6.2.1-arch1-1/os-release.md>) |
@@ -88,6 +89,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | :heavy_check_mark: | :x: | :heavy_check_mark: |
+| [Deepin 23.1](./Deepin%2023.1/6.6.84-amd64-desktop-hwe) | x86 | 6.6.84 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1-arch1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -157,6 +159,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | :x: | :x: |
+| [Deepin 23.1](./Deepin%2023.1/6.6.84-amd64-desktop-hwe) | x86 | 6.6.84 | :x: | :x: |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | :x: | :x: |
 | [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1-arch1 | :heavy_check_mark: | :heavy_check_mark: |
@@ -228,6 +231,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Deepin 23.1](./Deepin%2023.1/6.6.84-amd64-desktop-hwe) | x86 | 6.6.84 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1-arch1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -297,6 +301,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
+| [Deepin 23.1](./Deepin%2023.1/6.6.84-amd64-desktop-hwe) | x86 | 6.6.84 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1-arch1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -364,6 +369,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: |
+| [Deepin 23.1](./Deepin%2023.1/6.6.84-amd64-desktop-hwe) | x86 | 6.6.84 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1-arch1 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -435,6 +441,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | :x: | :x: | :x: | :x: | :x: |
+| [Deepin 23.1](./Deepin%2023.1/6.6.84-amd64-desktop-hwe) | x86 | 6.6.84 | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | :x: | :x: | :x: | :x: | :x: |
 | [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1-arch1 | :heavy_check_mark: | :x: | :x: | :x: | :x: |
@@ -506,6 +513,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | :heavy_check_mark: | :heavy_check_mark: |
+| [Deepin 23.1](./Deepin%2023.1/6.6.84-amd64-desktop-hwe) | x86 | 6.6.84 | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | :heavy_check_mark: | :heavy_check_mark: |
 | [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1-arch1 | :heavy_check_mark: | :heavy_check_mark: |
@@ -573,6 +581,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 | [Ubuntu 24.04.1 LTS](./Ubuntu%2024.04.1%20LTS/6.8.0-52-generic) | x86 | 6.8.12 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 24.04 LTS](./Ubuntu%2024.04%20LTS/6.8.0-38-generic) | x86 | 6.8.8 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora Linux 39 (Server Edition)](./Fedora%20Linux%2039%20(Server%20Edition)/6.7.7-200.fc39.aarch64) | arm64 | 6.7.7-200.fc39.aarch64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Deepin 23.1](./Deepin%2023.1/6.6.84-amd64-desktop-hwe) | x86 | 6.6.84 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 22.04.4 LTS](./Ubuntu%2022.04.4%20LTS/6.5.0-1014-gcp) | x86 | 6.5.0-1014-gcp | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux trixie/sid](./Debian%20GNU_Linux%20trixie/6.5.0-1-powerpc64le) | powerpc | 6.5.3 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Arch Linux](./Arch%20Linux/6.2.1-arch1-1) | x86 | 6.2.1-arch1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
