@@ -1,0 +1,10 @@
+title: "SRv6 Support"
+notes:
+  - note: "This table lists Segment routing with IPv6 data plane (SRv6) support. Most features are not guarded into options (except for HMAC), but this list can be used to find out whether the kernel supports SRv6 or not."
+compositions:
+  - name: "[CONFIG_IPV6_SEG6_LWTUNNEL](https://cateee.net/lkddb/web-lkddb/IPV6_SEG6_LWTUNNEL.html)"
+    configs: ["CONFIG_IPV6_SEG6_LWTUNNEL=[ym]"]
+  - name: "[CONFIG_IPV6_SEG6_HMAC](https://cateee.net/lkddb/web-lkddb/IPV6_SEG6_HMAC.html)"
+    configs: ["CONFIG_IPV6_SEG6_HMAC=[ym]"]
+  - name: "[IPV6_SEG6_BPF](https://cateee.net/lkddb/web-lkddb/IPV6_SEG6_BPF.html)"
+    configs: ["CONFIG_IPV6_SEG6_BPF=[ym]"]
