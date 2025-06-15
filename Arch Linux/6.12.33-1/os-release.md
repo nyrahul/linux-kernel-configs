@@ -1,4 +1,4 @@
-# /etc/os-release
+# https://gitlab.archlinux.org/archlinux/packaging/packages/filesystem/-/raw/main/os-release
 ```
 NAME="Arch Linux"
 PRETTY_NAME="Arch Linux"
@@ -8,7 +8,7 @@ ANSI_COLOR="38;2;23;147;209"
 HOME_URL="https://archlinux.org/"
 DOCUMENTATION_URL="https://wiki.archlinux.org/"
 SUPPORT_URL="https://bbs.archlinux.org/"
-BUG_REPORT_URL="https://bugs.archlinux.org/"
+BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues"
 PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
 LOGO=archlinux-logo
 ```
