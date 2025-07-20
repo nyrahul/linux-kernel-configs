@@ -1,13 +1,41 @@
 <!-- THIS IS AN AUTO-GENERATED FILE by ./tools/gendoc.sh. DO NOT EDIT MANUALLY -->
 # Linux Kernel Configs for Popular Distros
 ![CI status](https://github.com/nyrahul/linux-kernel-configs/actions/workflows/ci-verify.yml/badge.svg)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/nyrahul/linux-kernel-configs?tab=readme-ov-file#contributions-welcome)
 
 There is often a need to check a kernel config and other OS configuration to make a dev/design decision. The question often pops-up, does the popular distributions support the kernel config that the implementation expects? This is an attempt to answer that.
 
 **My specific use-case**:
-[KubeArmor](https://github.com/kubearmor/kubearmor) leverages LSMs (Linux Security Modules) and eBPF for in-kernel policy controls. We had to refer to kernel configs for making design/dev decisions regarding whether we can depend on a certain kernel primitive. The boot configs part of this repo helped in making an informed choice.
+[KubeArmor](https://kubearmor.io/) leverages LSMs (Linux Security Modules) and eBPF for in-kernel policy controls. We had to refer to kernel configs for making design/dev decisions regarding whether we can depend on a certain kernel primitive. The boot configs part of this repo helped in making an informed choice.
 
 > Note: The lists below are sorted based on kernel version number.
+
+
+## Distribution Summary
+
+Total Distros: 65
+
+<table>
+<tr><th> Kernel Major </th><th>Kernel Arch</th></tr>
+<tr><td>
+
+| Kernel Major Ver | Count   |
+|:----------------:|:-------:|
+| >= 6.0           |17|
+| >= 5.0 && < 6.0  |28|
+| >= 4.0 && < 5.0: |17|
+| < 4.0            |3|
+
+</td><td>
+
+| Kernel Arch | Count   |
+|:-----------:|:-------:|
+| x86         |60|
+| arm         |4|
+| powerpc     |1|
+| unknown     |0|
+
+</td></tr></table>
 
 <details><summary><h2>Distribution Details</h2></summary><p>
 
@@ -663,17 +691,18 @@ There is often a need to check a kernel config and other OS configuration to mak
 <details>
   <summary>Adding a new distro</summary>
 
-Use following command to create a Distro/Kernel specific folder with the corresponding markdowns:
+ssh/login to the target Linux machine and run:
 ```
-curl -s https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/lk-config-get.sh | bash -s
+curl -s https://lkc.rjed.in/ | bash -s
 ```
 if `curl` is not available, use `wget` ...
 ```
-wget -q -O- https://raw.githubusercontent.com/nyrahul/linux-kernel-configs/main/lk-config-get.sh  | bash -s
+wget -q -O- https://lkc.rjed.in/ | bash -s
 ```
+This will create a folder with the name of the distro.
 
-1. Copy the folder to your github fork
-2. Run `make`
+1. Copy the folder to your `linux-kernel-configs` git repo.
+2. Run `make`. This will update the `README.md` file with the distro you added.
 3. Raise a PR
 
 </details>
@@ -687,7 +716,7 @@ Composition means a set of kernel configuration options shown in the context of 
 To create a new composition:
 1. Create a new composition file. Use [tools/compositions/lsm.yaml](tools/compositions/lsm.yaml) as ref.
 2. Do a `make`
-3. Check if the composition is reflected in the [README.md](README.md)
+3. Check if the composition is reflected in the [README.md](README.md).
 4. Raise a PR with the changes
 
 </details>
