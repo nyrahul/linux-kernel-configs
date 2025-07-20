@@ -15,6 +15,10 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 Total Distros: 65
 
+<table>
+<tr><th> Kernel Major </th><th>Kernel Arch</th></tr>
+<tr><td>
+
 | Kernel Major Ver | Count   |
 |:----------------:|:-------:|
 | >= 6.0           |17|
@@ -22,12 +26,16 @@ Total Distros: 65
 | >= 4.0 && < 5.0: |17|
 | < 4.0            |3|
 
+</td><td>
+
 | Kernel Arch | Count   |
 |:-----------:|:-------:|
 | x86         |60|
 | arm         |4|
 | powerpc     |1|
 | unknown     |0|
+
+</td></tr></table>
 
 <details><summary><h2>Distribution Details</h2></summary><p>
 

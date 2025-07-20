@@ -42,12 +42,18 @@ main()
 
 Total Distros: $distcnt
 
+<table>
+<tr><th> Kernel Major </th><th>Kernel Arch</th></tr>
+<tr><td>
+
 | Kernel Major Ver | Count   |
 |:----------------:|:-------:|
 | >= 6.0           |$krn_ge_6|
 | >= 5.0 && < 6.0  |$krn_ge_5|
 | >= 4.0 && < 5.0: |$krn_ge_4|
 | < 4.0            |$krn_lt_4|
+
+</td><td>
 
 | Kernel Arch | Count   |
 |:-----------:|:-------:|
@@ -56,6 +62,7 @@ Total Distros: $distcnt
 | powerpc     |$arch_ppc|
 | unknown     |$arch_unk|
 
+</td></tr></table>
 EOF
 }
 
