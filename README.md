@@ -13,7 +13,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 ## Distribution Summary
 
-Total Distros: 67
+Total Distros: 68
 
 <table>
 <tr><th> Kernel Major </th><th>Kernel Arch</th></tr>
@@ -22,7 +22,7 @@ Total Distros: 67
 | Kernel Major Ver | Count   |
 |:----------------:|:-------:|
 | >= 6.0           |19|
-| >= 5.0 && < 6.0  |28|
+| >= 5.0 && < 6.0  |29|
 | >= 4.0 && < 5.0: |17|
 | < 4.0            |3|
 
@@ -30,7 +30,7 @@ Total Distros: 67
 
 | Kernel Arch | Count   |
 |:-----------:|:-------:|
-| x86         |61|
+| x86         |62|
 | arm         |5|
 | powerpc     |1|
 | unknown     |0|
@@ -65,6 +65,7 @@ Total Distros: 67
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | [config](<./Fedora CoreOS 35.20211203.3.0/5.15.6-200.fc35.x86_64/bootconfig.md>) | [file](<./Fedora CoreOS 35.20211203.3.0/5.15.6-200.fc35.x86_64/hostnamectl.md>) | [file](<./Fedora CoreOS 35.20211203.3.0/5.15.6-200.fc35.x86_64/os-release.md>) |
 | [Pop!_OS 21.10](./Pop!_OS%2021.10/5.15.5-76051505-generic) | x86 | 5.15.5-76051505-generic | [config](<./Pop!_OS 21.10/5.15.5-76051505-generic/bootconfig.md>) | [file](<./Pop!_OS 21.10/5.15.5-76051505-generic/hostnamectl.md>) | [file](<./Pop!_OS 21.10/5.15.5-76051505-generic/os-release.md>) |
 | [Ubuntu 22.04.3 LTS](./Ubuntu%2022.04.3%20LTS/5.15.0-1051-azure) | x86 | 5.15.0-1051-azure | [config](<./Ubuntu 22.04.3 LTS/5.15.0-1051-azure/bootconfig.md>) | [file](<./Ubuntu 22.04.3 LTS/5.15.0-1051-azure/hostnamectl.md>) | [file](<./Ubuntu 22.04.3 LTS/5.15.0-1051-azure/os-release.md>) |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.0-144-generic) | x86 | 5.15.0-144-generic | [config](<./Ubuntu 22.04.5 LTS/5.15.0-144-generic/bootconfig.md>) | [file](<./Ubuntu 22.04.5 LTS/5.15.0-144-generic/hostnamectl.md>) | [file](<./Ubuntu 22.04.5 LTS/5.15.0-144-generic/os-release.md>) |
 | [Oracle Linux Server 8.8](./Oracle%20Linux%20Server%208.8/5.15.0-103.114.4.el8uek.x86_64) | x86_64 | 5.15.0-103.114.4.el8uek.x86_64 | [config](<./Oracle Linux Server 8.8/5.15.0-103.114.4.el8uek.x86_64/bootconfig.md>) | [file](<./Oracle Linux Server 8.8/5.15.0-103.114.4.el8uek.x86_64/hostnamectl.md>) | [file](<./Oracle Linux Server 8.8/5.15.0-103.114.4.el8uek.x86_64/os-release.md>) |
 | [Oracle Linux Server 8.7](./Oracle%20Linux%20Server%208.7/5.15.0-6.80.3.1.el8uek.x86_64) | x86_64 | 5.15.0-6.80.3.1.el8uek.x86_64 | [config](<./Oracle Linux Server 8.7/5.15.0-6.80.3.1.el8uek.x86_64/bootconfig.md>) | [file](<./Oracle Linux Server 8.7/5.15.0-6.80.3.1.el8uek.x86_64/hostnamectl.md>) | [file](<./Oracle Linux Server 8.7/5.15.0-6.80.3.1.el8uek.x86_64/os-release.md>) |
 | [AlmaLinux 9.3 (Shamrock Pampas Cat)](./AlmaLinux%209.3%20(Shamrock%20Pampas%20Cat)/5.14.0-362.18.1.el9_3.x86_64) | x86_64 | 5.14.0-362.18.1.el9_3.x86_64 | [config](<./AlmaLinux 9.3 (Shamrock Pampas Cat)/5.14.0-362.18.1.el9_3.x86_64/bootconfig.md>) | [file](<./AlmaLinux 9.3 (Shamrock Pampas Cat)/5.14.0-362.18.1.el9_3.x86_64/hostnamectl.md>) | [file](<./AlmaLinux 9.3 (Shamrock Pampas Cat)/5.14.0-362.18.1.el9_3.x86_64/os-release.md>) |
@@ -139,6 +140,7 @@ Total Distros: 67
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Pop!_OS 21.10](./Pop!_OS%2021.10/5.15.5-76051505-generic) | x86 | 5.15.5-76051505-generic | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 22.04.3 LTS](./Ubuntu%2022.04.3%20LTS/5.15.0-1051-azure) | x86 | 5.15.0-1051-azure | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.0-144-generic) | x86 | 5.15.0-144-generic | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Oracle Linux Server 8.8](./Oracle%20Linux%20Server%208.8/5.15.0-103.114.4.el8uek.x86_64) | x86_64 | 5.15.0-103.114.4.el8uek.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Oracle Linux Server 8.7](./Oracle%20Linux%20Server%208.7/5.15.0-6.80.3.1.el8uek.x86_64) | x86_64 | 5.15.0-6.80.3.1.el8uek.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [AlmaLinux 9.3 (Shamrock Pampas Cat)](./AlmaLinux%209.3%20(Shamrock%20Pampas%20Cat)/5.14.0-362.18.1.el9_3.x86_64) | x86_64 | 5.14.0-362.18.1.el9_3.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -213,6 +215,7 @@ Total Distros: 67
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :x: |
 | [Pop!_OS 21.10](./Pop!_OS%2021.10/5.15.5-76051505-generic) | x86 | 5.15.5-76051505-generic | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 22.04.3 LTS](./Ubuntu%2022.04.3%20LTS/5.15.0-1051-azure) | x86 | 5.15.0-1051-azure | :heavy_check_mark: | :heavy_check_mark: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.0-144-generic) | x86 | 5.15.0-144-generic | :heavy_check_mark: | :heavy_check_mark: |
 | [Oracle Linux Server 8.8](./Oracle%20Linux%20Server%208.8/5.15.0-103.114.4.el8uek.x86_64) | x86_64 | 5.15.0-103.114.4.el8uek.x86_64 | :heavy_check_mark: | :heavy_check_mark: |
 | [Oracle Linux Server 8.7](./Oracle%20Linux%20Server%208.7/5.15.0-6.80.3.1.el8uek.x86_64) | x86_64 | 5.15.0-6.80.3.1.el8uek.x86_64 | :heavy_check_mark: | :heavy_check_mark: |
 | [AlmaLinux 9.3 (Shamrock Pampas Cat)](./AlmaLinux%209.3%20(Shamrock%20Pampas%20Cat)/5.14.0-362.18.1.el9_3.x86_64) | x86_64 | 5.14.0-362.18.1.el9_3.x86_64 | :heavy_check_mark: | :x: |
@@ -289,6 +292,7 @@ Total Distros: 67
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Pop!_OS 21.10](./Pop!_OS%2021.10/5.15.5-76051505-generic) | x86 | 5.15.5-76051505-generic | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 22.04.3 LTS](./Ubuntu%2022.04.3%20LTS/5.15.0-1051-azure) | x86 | 5.15.0-1051-azure | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.0-144-generic) | x86 | 5.15.0-144-generic | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Oracle Linux Server 8.8](./Oracle%20Linux%20Server%208.8/5.15.0-103.114.4.el8uek.x86_64) | x86_64 | 5.15.0-103.114.4.el8uek.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [Oracle Linux Server 8.7](./Oracle%20Linux%20Server%208.7/5.15.0-6.80.3.1.el8uek.x86_64) | x86_64 | 5.15.0-6.80.3.1.el8uek.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [AlmaLinux 9.3 (Shamrock Pampas Cat)](./AlmaLinux%209.3%20(Shamrock%20Pampas%20Cat)/5.14.0-362.18.1.el9_3.x86_64) | x86_64 | 5.14.0-362.18.1.el9_3.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -363,6 +367,7 @@ Total Distros: 67
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [Pop!_OS 21.10](./Pop!_OS%2021.10/5.15.5-76051505-generic) | x86 | 5.15.5-76051505-generic | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 22.04.3 LTS](./Ubuntu%2022.04.3%20LTS/5.15.0-1051-azure) | x86 | 5.15.0-1051-azure | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.0-144-generic) | x86 | 5.15.0-144-generic | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Oracle Linux Server 8.8](./Oracle%20Linux%20Server%208.8/5.15.0-103.114.4.el8uek.x86_64) | x86_64 | 5.15.0-103.114.4.el8uek.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [Oracle Linux Server 8.7](./Oracle%20Linux%20Server%208.7/5.15.0-6.80.3.1.el8uek.x86_64) | x86_64 | 5.15.0-6.80.3.1.el8uek.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [AlmaLinux 9.3 (Shamrock Pampas Cat)](./AlmaLinux%209.3%20(Shamrock%20Pampas%20Cat)/5.14.0-362.18.1.el9_3.x86_64) | x86_64 | 5.14.0-362.18.1.el9_3.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |
@@ -435,6 +440,7 @@ Total Distros: 67
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [Pop!_OS 21.10](./Pop!_OS%2021.10/5.15.5-76051505-generic) | x86 | 5.15.5-76051505-generic | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 22.04.3 LTS](./Ubuntu%2022.04.3%20LTS/5.15.0-1051-azure) | x86 | 5.15.0-1051-azure | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.0-144-generic) | x86 | 5.15.0-144-generic | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Oracle Linux Server 8.8](./Oracle%20Linux%20Server%208.8/5.15.0-103.114.4.el8uek.x86_64) | x86_64 | 5.15.0-103.114.4.el8uek.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [Oracle Linux Server 8.7](./Oracle%20Linux%20Server%208.7/5.15.0-6.80.3.1.el8uek.x86_64) | x86_64 | 5.15.0-6.80.3.1.el8uek.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [AlmaLinux 9.3 (Shamrock Pampas Cat)](./AlmaLinux%209.3%20(Shamrock%20Pampas%20Cat)/5.14.0-362.18.1.el9_3.x86_64) | x86_64 | 5.14.0-362.18.1.el9_3.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: |
@@ -511,6 +517,7 @@ Total Distros: 67
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | [Pop!_OS 21.10](./Pop!_OS%2021.10/5.15.5-76051505-generic) | x86 | 5.15.5-76051505-generic | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | [Ubuntu 22.04.3 LTS](./Ubuntu%2022.04.3%20LTS/5.15.0-1051-azure) | x86 | 5.15.0-1051-azure | :heavy_check_mark: | :x: | :x: | :x: | :x: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.0-144-generic) | x86 | 5.15.0-144-generic | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | [Oracle Linux Server 8.8](./Oracle%20Linux%20Server%208.8/5.15.0-103.114.4.el8uek.x86_64) | x86_64 | 5.15.0-103.114.4.el8uek.x86_64 | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | [Oracle Linux Server 8.7](./Oracle%20Linux%20Server%208.7/5.15.0-6.80.3.1.el8uek.x86_64) | x86_64 | 5.15.0-6.80.3.1.el8uek.x86_64 | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | [AlmaLinux 9.3 (Shamrock Pampas Cat)](./AlmaLinux%209.3%20(Shamrock%20Pampas%20Cat)/5.14.0-362.18.1.el9_3.x86_64) | x86_64 | 5.14.0-362.18.1.el9_3.x86_64 | :heavy_check_mark: | :x: | :x: | :x: | :x: |
@@ -587,6 +594,7 @@ Total Distros: 67
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :heavy_check_mark: |
 | [Pop!_OS 21.10](./Pop!_OS%2021.10/5.15.5-76051505-generic) | x86 | 5.15.5-76051505-generic | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 22.04.3 LTS](./Ubuntu%2022.04.3%20LTS/5.15.0-1051-azure) | x86 | 5.15.0-1051-azure | :heavy_check_mark: | :heavy_check_mark: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.0-144-generic) | x86 | 5.15.0-144-generic | :heavy_check_mark: | :heavy_check_mark: |
 | [Oracle Linux Server 8.8](./Oracle%20Linux%20Server%208.8/5.15.0-103.114.4.el8uek.x86_64) | x86_64 | 5.15.0-103.114.4.el8uek.x86_64 | :heavy_check_mark: | :heavy_check_mark: |
 | [Oracle Linux Server 8.7](./Oracle%20Linux%20Server%208.7/5.15.0-6.80.3.1.el8uek.x86_64) | x86_64 | 5.15.0-6.80.3.1.el8uek.x86_64 | :heavy_check_mark: | :heavy_check_mark: |
 | [AlmaLinux 9.3 (Shamrock Pampas Cat)](./AlmaLinux%209.3%20(Shamrock%20Pampas%20Cat)/5.14.0-362.18.1.el9_3.x86_64) | x86_64 | 5.14.0-362.18.1.el9_3.x86_64 | :heavy_check_mark: | :heavy_check_mark: |
@@ -659,6 +667,7 @@ Total Distros: 67
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Pop!_OS 21.10](./Pop!_OS%2021.10/5.15.5-76051505-generic) | x86 | 5.15.5-76051505-generic | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 22.04.3 LTS](./Ubuntu%2022.04.3%20LTS/5.15.0-1051-azure) | x86 | 5.15.0-1051-azure | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.0-144-generic) | x86 | 5.15.0-144-generic | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | [Oracle Linux Server 8.8](./Oracle%20Linux%20Server%208.8/5.15.0-103.114.4.el8uek.x86_64) | x86_64 | 5.15.0-103.114.4.el8uek.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Oracle Linux Server 8.7](./Oracle%20Linux%20Server%208.7/5.15.0-6.80.3.1.el8uek.x86_64) | x86_64 | 5.15.0-6.80.3.1.el8uek.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [AlmaLinux 9.3 (Shamrock Pampas Cat)](./AlmaLinux%209.3%20(Shamrock%20Pampas%20Cat)/5.14.0-362.18.1.el9_3.x86_64) | x86_64 | 5.14.0-362.18.1.el9_3.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -711,7 +720,7 @@ Total Distros: 67
 
 ssh/login to the target Linux machine and run:
 ```
-curl -s https://lkc.rjed.in/ | bash -s
+curl -sfL https://lkc.rjed.in/ | bash -s
 ```
 if `curl` is not available, use `wget` ...
 ```
