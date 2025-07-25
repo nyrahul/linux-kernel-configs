@@ -720,7 +720,7 @@ Total Distros: 68
 
 ssh/login to the target Linux machine and run:
 ```
-curl -s https://lkc.rjed.in/ | bash -s
+curl -sfL https://lkc.rjed.in/ | bash -s
 ```
 if `curl` is not available, use `wget` ...
 ```
