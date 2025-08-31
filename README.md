@@ -13,7 +13,7 @@ There is often a need to check a kernel config and other OS configuration to mak
 
 ## Distribution Summary
 
-Total Distros: 68
+Total Distros: 69
 
 <table>
 <tr><th> Kernel Major </th><th>Kernel Arch</th></tr>
@@ -22,7 +22,7 @@ Total Distros: 68
 | Kernel Major Ver | Count   |
 |:----------------:|:-------:|
 | >= 6.0           |19|
-| >= 5.0 && < 6.0  |29|
+| >= 5.0 && < 6.0  |30|
 | >= 4.0 && < 5.0: |17|
 | < 4.0            |3|
 
@@ -31,7 +31,7 @@ Total Distros: 68
 | Kernel Arch | Count   |
 |:-----------:|:-------:|
 | x86         |62|
-| arm         |5|
+| arm         |6|
 | powerpc     |1|
 | unknown     |0|
 
@@ -60,6 +60,7 @@ Total Distros: 68
 | [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/6.1.10-11.ph5) | x86_64 | 6.1.10 | [config](<./VMware Photon OS_Linux/6.1.10-11.ph5/bootconfig.md>) | [file](<./VMware Photon OS_Linux/6.1.10-11.ph5/hostnamectl.md>) | [file](<./VMware Photon OS_Linux/6.1.10-11.ph5/os-release.md>) |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-arm64) | arm64 | 6.1.76 | [config](<./Debian GNU_Linux 12 (bookworm)/6.1.0-18-cloud-arm64/bootconfig.md>) | [file](<./Debian GNU_Linux 12 (bookworm)/6.1.0-18-cloud-arm64/hostnamectl.md>) | [file](<./Debian GNU_Linux 12 (bookworm)/6.1.0-18-cloud-arm64/os-release.md>) |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-amd64) | x86 | 6.1.76 | [config](<./Debian GNU_Linux 12 (bookworm)/6.1.0-18-cloud-amd64/bootconfig.md>) | [file](<./Debian GNU_Linux 12 (bookworm)/6.1.0-18-cloud-amd64/hostnamectl.md>) | [file](<./Debian GNU_Linux 12 (bookworm)/6.1.0-18-cloud-amd64/os-release.md>) |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.148-tegra) | arm64 | 5.15.148 | [config](<./Ubuntu 22.04.5 LTS/5.15.148-tegra/bootconfig.md>) | [file](<./Ubuntu 22.04.5 LTS/5.15.148-tegra/hostnamectl.md>) | [file](<./Ubuntu 22.04.5 LTS/5.15.148-tegra/os-release.md>) |
 | [CBL-Mariner/Linux](./CBL-Mariner_Linux/5.15.138.1-4.cm2) | x86_64 | 5.15.138.1 | [config](<./CBL-Mariner_Linux/5.15.138.1-4.cm2/bootconfig.md>) | [file](<./CBL-Mariner_Linux/5.15.138.1-4.cm2/hostnamectl.md>) | [file](<./CBL-Mariner_Linux/5.15.138.1-4.cm2/os-release.md>) |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86-53.137.amzn2.x86_64 | [config](<./Amazon Linux 2/5.15.86-53.137.amzn2.x86_64/bootconfig.md>) | [file](<./Amazon Linux 2/5.15.86-53.137.amzn2.x86_64/hostnamectl.md>) | [file](<./Amazon Linux 2/5.15.86-53.137.amzn2.x86_64/os-release.md>) |
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | [config](<./Fedora CoreOS 35.20211203.3.0/5.15.6-200.fc35.x86_64/bootconfig.md>) | [file](<./Fedora CoreOS 35.20211203.3.0/5.15.6-200.fc35.x86_64/hostnamectl.md>) | [file](<./Fedora CoreOS 35.20211203.3.0/5.15.6-200.fc35.x86_64/os-release.md>) |
@@ -135,6 +136,7 @@ Total Distros: 68
 | [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/6.1.10-11.ph5) | x86_64 | 6.1.10 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-arm64) | arm64 | 6.1.76 | :heavy_check_mark: | :x: | :heavy_check_mark: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-amd64) | x86 | 6.1.76 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.148-tegra) | arm64 | 5.15.148 | :heavy_check_mark: | :x: | :heavy_check_mark: |
 | [CBL-Mariner/Linux](./CBL-Mariner_Linux/5.15.138.1-4.cm2) | x86_64 | 5.15.138.1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86-53.137.amzn2.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -210,6 +212,7 @@ Total Distros: 68
 | [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/6.1.10-11.ph5) | x86_64 | 6.1.10 | :heavy_check_mark: | :x: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-arm64) | arm64 | 6.1.76 | :x: | :x: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-amd64) | x86 | 6.1.76 | :x: | :x: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.148-tegra) | arm64 | 5.15.148 | :x: | :x: |
 | [CBL-Mariner/Linux](./CBL-Mariner_Linux/5.15.138.1-4.cm2) | x86_64 | 5.15.138.1 | :heavy_check_mark: | :x: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86-53.137.amzn2.x86_64 | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :x: |
@@ -287,6 +290,7 @@ Total Distros: 68
 | [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/6.1.10-11.ph5) | x86_64 | 6.1.10 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :x: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-arm64) | arm64 | 6.1.76 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-amd64) | x86 | 6.1.76 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.148-tegra) | arm64 | 5.15.148 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | [CBL-Mariner/Linux](./CBL-Mariner_Linux/5.15.138.1-4.cm2) | x86_64 | 5.15.138.1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :x: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86-53.137.amzn2.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -362,6 +366,7 @@ Total Distros: 68
 | [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/6.1.10-11.ph5) | x86_64 | 6.1.10 | :heavy_check_mark: | :x: | :x: | :x: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-arm64) | arm64 | 6.1.76 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-amd64) | x86 | 6.1.76 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.148-tegra) | arm64 | 5.15.148 | :heavy_check_mark: | :x: | :x: | :x: |
 | [CBL-Mariner/Linux](./CBL-Mariner_Linux/5.15.138.1-4.cm2) | x86_64 | 5.15.138.1 | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86-53.137.amzn2.x86_64 | :x: | :x: | :x: | :x: |
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
@@ -435,6 +440,7 @@ Total Distros: 68
 | [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/6.1.10-11.ph5) | x86_64 | 6.1.10 | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-arm64) | arm64 | 6.1.76 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-amd64) | x86 | 6.1.76 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.148-tegra) | arm64 | 5.15.148 | :x: | :x: | :x: | :heavy_check_mark: | :x: | :x: |
 | [CBL-Mariner/Linux](./CBL-Mariner_Linux/5.15.138.1-4.cm2) | x86_64 | 5.15.138.1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86-53.137.amzn2.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: |
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: |
@@ -512,6 +518,7 @@ Total Distros: 68
 | [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/6.1.10-11.ph5) | x86_64 | 6.1.10 | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-arm64) | arm64 | 6.1.76 | :x: | :x: | :x: | :x: | :x: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-amd64) | x86 | 6.1.76 | :heavy_check_mark: | :x: | :x: | :x: | :x: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.148-tegra) | arm64 | 5.15.148 | :x: | :x: | :x: | :x: | :x: |
 | [CBL-Mariner/Linux](./CBL-Mariner_Linux/5.15.138.1-4.cm2) | x86_64 | 5.15.138.1 | :x: | :x: | :x: | :x: | :x: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86-53.137.amzn2.x86_64 | :x: | :x: | :x: | :x: | :x: |
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :x: | :x: | :x: | :x: |
@@ -589,6 +596,7 @@ Total Distros: 68
 | [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/6.1.10-11.ph5) | x86_64 | 6.1.10 | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-arm64) | arm64 | 6.1.76 | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-amd64) | x86 | 6.1.76 | :heavy_check_mark: | :heavy_check_mark: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.148-tegra) | arm64 | 5.15.148 | :heavy_check_mark: | :heavy_check_mark: |
 | [CBL-Mariner/Linux](./CBL-Mariner_Linux/5.15.138.1-4.cm2) | x86_64 | 5.15.138.1 | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86-53.137.amzn2.x86_64 | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :heavy_check_mark: |
@@ -662,6 +670,7 @@ Total Distros: 68
 | [VMware Photon OS/Linux](./VMware%20Photon%20OS_Linux/6.1.10-11.ph5) | x86_64 | 6.1.10 | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-arm64) | arm64 | 6.1.76 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux 12 (bookworm)](./Debian%20GNU_Linux%2012%20(bookworm)/6.1.0-18-cloud-amd64) | x86 | 6.1.76 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| [Ubuntu 22.04.5 LTS](./Ubuntu%2022.04.5%20LTS/5.15.148-tegra) | arm64 | 5.15.148 | :x: | :x: | :x: | :x: | :x: | :x: | :x: | :x: |
 | [CBL-Mariner/Linux](./CBL-Mariner_Linux/5.15.138.1-4.cm2) | x86_64 | 5.15.138.1 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Amazon Linux 2](./Amazon%20Linux%202/5.15.86-53.137.amzn2.x86_64) | x86_64 | 5.15.86-53.137.amzn2.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | [Fedora CoreOS 35.20211203.3.0](./Fedora%20CoreOS%2035.20211203.3.0/5.15.6-200.fc35.x86_64) | x86_64 | 5.15.6-200.fc35.x86_64 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
