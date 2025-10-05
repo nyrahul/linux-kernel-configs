@@ -1,3 +1,4 @@
+```
 #
 # Automatically generated file; DO NOT EDIT.
 # Linux/x86_64 6.1.85 Kernel Configuration
@@ -4551,3 +4552,4 @@ CONFIG_ARCH_USE_MEMTEST=y
 #
 # end of Rust hacking
 # end of Kernel hacking
+```

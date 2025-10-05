@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 YQ=`dirname $0`/yq # Use yq.exe on windows
+if [ ! -f "$YQ" ]; then
+	`dirname $0`/download-yq.sh
+fi
 TMP_OSREL=temporary_osrel.txt
 TMP_HOSTCTL=temporary_hostnamectl.txt
 TMP_BOOTCFG=temporary_bootconfig.txt
@@ -53,6 +56,14 @@ getArchKrnVer()
 #	KRNVER=${KRNVER/-*/}
 }
 
+stripFile()
+{
+	sed -n '/^```$/,/^```$/p' "$1" | grep -v '`' > "$2"
+}
+
+# Iterate through all platform directories (format: */*/version) and execute a callback function for each
+# Usage: forEveryPlatform <callback_function>
+# For each platform, sets PLATFORM, PLATFORM_PATH, BOOTCONFIG, DISTRO_NAME, ARCH, and KRNVER variables
 forEveryPlatform()
 {
 	[[ "$1" == "" ]] && statusline ERR "invalid use of forEveryPlatform"
@@ -63,12 +74,12 @@ forEveryPlatform()
 		PLATFORM_PATH="${line// /%20}"
 		BOOTCONFIG="$line/bootconfig.md"
 		[[ ! -f "$BOOTCONFIG" ]] && continue
-		awk '/\`\`\`/,/\`\`\`/' "$BOOTCONFIG" | grep -v "\`\`\`" > $TMP_BOOTCFG
+		stripFile "$BOOTCONFIG" "$TMP_BOOTCFG"
 
 		HOSTNAMECTL="$line/hostnamectl.md"
-		[[ -f "$HOSTNAMECTL" ]] && awk '/\`\`\`/,/\`\`\`/' "$HOSTNAMECTL" | grep -v "\`\`\`" > $TMP_HOSTCTL
+		[[ -f "$HOSTNAMECTL" ]] && stripFile "$HOSTNAMECTL" "$TMP_HOSTCTL"
 		OSREL="$line/os-release.md"
-		[[ -f "$OSREL" ]] && awk '/\`\`\`/,/\`\`\`/' "$OSREL" | grep -v "\`\`\`" > $TMP_OSREL
+		[[ -f "$OSREL" ]] && stripFile "$OSREL" "$TMP_OSREL"
 		[[ ! -f "$TMP_OSREL" ]] && [[ ! -f "$TMP_HOSTCTL" ]] && 
 			statusline WARN "neither os-release nor hostnamectl found for [$PLATFORM]" && continue
 

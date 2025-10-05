@@ -1,3 +1,4 @@
+```
 NAME="Container-Optimized OS"
 ID=cos
 PRETTY_NAME="Container-Optimized OS from Google"
@@ -9,3 +10,4 @@ GOOGLE_CRASH_ID=Lakitu
 VERSION=109
 VERSION_ID=109
 BUILD_ID=17800.218.69
+```
