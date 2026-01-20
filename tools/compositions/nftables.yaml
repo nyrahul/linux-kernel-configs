@@ -1,0 +1,10 @@
+title: "NFTABLES Support"
+notes:
+  - note: "nftables supercedes ip*tables"
+compositions:
+  - name: "nftables"
+    desc: "nftables"
+    configs: ["CONFIG_NF_TABLES=[ym]"]
+  - name: "nftables-inet"
+    desc: "nftables-inet"
+    configs: ["CONFIG_NF_TABLES_INET=[ym]"]
