@@ -553,6 +553,7 @@ Total Distros: 70
 | [Ubuntu 18.04.6 LTS](./Ubuntu%2018.04.6%20LTS/5.4.0-1060-aws) | x86_64 | 5.4.0-1060-aws | :heavy_check_mark: | :heavy_check_mark: |
 | [Ubuntu 20.04.4 LTS](./Ubuntu%2020.04.4%20LTS/5.4.0-204-generic) | x86 | 5.4.0-204-generic | :heavy_check_mark: | :heavy_check_mark: |
 | [k3OS v0.21.5-k3s2r1](./k3OS%20v0.21.5-k3s2r1/5.4.0-88-generic) | x86 | 5.4.0-88-generic | :heavy_check_mark: | :heavy_check_mark: |
+| [Ubuntu 18.04.6 LTS](./Ubuntu%2018.04.6%20LTS/5.4.0-42-generic) | x86 | 5.4.0-42-generic | :heavy_check_mark: | :heavy_check_mark: |
 | [SUSE Linux Enterprise Server 15 SP3](./SUSE%20Linux%20Enterprise%20Server%2015%20SP3/5.3.18-59.24-default) | x86 | 5.3.18 | :heavy_check_mark: | :heavy_check_mark: |
 | [Alibaba Cloud Linux (Aliyun Linux) 2.1903 LTS (Hunting Beagle)](./Alibaba%20Cloud%20Linux%20(Aliyun%20Linux)%202.1903%20LTS%20(Hunting%20Beagle)/4.19.91-27.7.al7.x86_64) | x86 | 4.19.91-27.7.al7.x86_64 | :heavy_check_mark: | :heavy_check_mark: |
 | [Debian GNU/Linux 10 (buster)](./Debian%20GNU_Linux%2010%20(buster)/4.19.0-26-cloud-amd64) | x86 | 4.19.304 | :heavy_check_mark: | :heavy_check_mark: |
